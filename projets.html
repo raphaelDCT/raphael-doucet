@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projets — Raphaël Doucet, photographe et vidéaste à Gourin, Bretagne</title>
+<meta name="description" content="Reportages et séries photographiques de Raphaël Doucet, photographe et vidéaste à Gourin (Bretagne) : sport, événements, portrait, animalier.">
+<script src="./support.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/transitions.css">
+<script src="js/donnees-site.js"></script>
+<script src="js/traduction.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Geist:wght@300;400;500;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+.pj-sub{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;margin:clamp(72px,8vw,120px) 0 clamp(28px,3vw,40px);padding-bottom:20px;border-bottom:1px solid #151514}
+.pj-sub-t{margin:0;font-family:'Instrument Serif','Times New Roman',Georgia,serif;font-weight:400;font-size:clamp(36px,3.8vw,56px);line-height:1}
+.pj-sub-d{margin:0;font-size:15px;color:#5F5B54}
+.series{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(16px,2vw,28px)}
+.serie{display:flex;flex-direction:column;gap:14px;text-decoration:none;color:#151514}
+.serie-m{position:relative;display:block;overflow:hidden;aspect-ratio:4/5;background:#E6E0D5}
+.serie-m img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s cubic-bezier(.2,.7,.2,1)}
+.serie:hover .serie-m img{transform:scale(1.035)}
+.serie-k{font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#5F5B54}
+.serie-t{font-family:'Instrument Serif','Times New Roman',Georgia,serif;font-size:clamp(24px,2vw,30px);line-height:1.05}
+.serie:focus-visible{outline:2px solid #151514;outline-offset:6px}
+@media (max-width:1000px){.series{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.series{grid-template-columns:1fr}}
+</style>
+</helmet>
+<div class="page">
+<div style="position: sticky; top: 0; z-index: 40">
+<dc-import name="SiteNav" current="projets" hint-size="100%,64px"></dc-import>
+</div>
+<main class="page-main">
+<header class="phead">
+<div class="sec-head">
+<span class="sec-num">02</span>
+<h1 class="sec-title">Projets</h1>
+<p class="sec-note">Reportages complets et séries photographiques, en Bretagne et ailleurs.<span class="sec-count">{{ total }}</span></p>
+</div>
+</header>
+<div class="gal">
+<div class="pj-sub" style="margin-top: 0"><h2 class="pj-sub-t">Reportages</h2><p class="pj-sub-d">{{ nReportages }}</p></div>
+<div class="rlist" onContextMenu="{{ guardMenu }}">
+<sc-for list="{{ projects }}" as="pr" hint-placeholder-count="5">
+<a class="rcard" href="{{ pr.page }}">
+<span class="rcard-m">
+<img src="{{ pr.fichier }}" alt="" loading="lazy" decoding="async" draggable="false">
+</span>
+<span class="rcard-i">
+<span class="rcard-k">{{ pr.surtitre }}</span>
+<span class="rcard-t">{{ pr.titre }}</span>
+<sc-if value="{{ pr.hasSub }}" hint-placeholder-val="{{ true }}"><span class="rcard-s">{{ pr.sousTitre }}</span></sc-if>
+<span class="rcard-c">{{ pr.count }}</span>
+<span class="more">Voir le reportage <span aria-hidden="true">→</span></span>
+</span>
+</a>
+</sc-for>
+</div>
+
+<sc-if value="{{ hasSeries }}" hint-placeholder-val="{{ true }}">
+<div class="pj-sub"><h2 class="pj-sub-t">Séries photo</h2><p class="pj-sub-d">{{ nSeries }}</p></div>
+<div class="series" onContextMenu="{{ guardMenu }}">
+<sc-for list="{{ series }}" as="s" hint-placeholder-count="4">
+<a class="serie" href="{{ s.page }}">
+<span class="serie-m"><img src="{{ s.fichier }}" alt="" loading="lazy" decoding="async" draggable="false"></span>
+<span class="serie-k">{{ s.cat }} · {{ s.count }}</span>
+<span class="serie-t">{{ s.titre }}</span>
+<span class="more">Voir la série <span aria-hidden="true">→</span></span>
+</a>
+</sc-for>
+</div>
+</sc-if>
+</div>
+</main>
+<dc-import name="SiteFooter" hint-size="100%,180px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview": {"width": 1440, "height": 900}}'>
+/* Page Projets : tous les reportages (window.RD.projets) et les séries photo
+   (photos ayant un champ « serie »), générés automatiquement depuis les données. */
+class Component extends DCLogic {
+  renderVals() {
+    const D = window.RD || { photos: [], projets: [], categories: [] };
+    const real = (D.photos || []).filter((p) => p && p.fichier);
+    const byId = {};
+    real.forEach((p) => { byId[p.id] = p; });
+    const cats = {};
+    (D.categories || []).forEach((c) => { cats[c.id] = c; });
+    const n = (k) => k + ' image' + (k > 1 ? 's' : '');
+    const projects = (D.projets || []).filter((pr) => real.some((p) => p.projet === pr.id)).map((pr) => {
+      const list = real.filter((p) => p.projet === pr.id);
+      const cover = byId[pr.couverture] || list[0];
+      return {
+        page: pr.page, fichier: cover.fichier, titre: pr.titre, surtitre: pr.surtitre || '',
+        sousTitre: pr.sousTitre || '', hasSub: !!pr.sousTitre, count: n(list.length)
+      };
+    });
+    const seen = {};
+    const series = [];
+    real.forEach((p) => {
+      if (!p.serie || p.projet || !cats[p.categorie]) return;
+      const k = p.categorie + '|' + p.serie;
+      if (!seen[k]) {
+        const c = cats[p.categorie] || {};
+        seen[k] = { titre: p.serie, cat: c.titre || p.categorie, page: c.page || 'portfolio.html', fichier: p.fichier, n: 0 };
+        series.push(seen[k]);
+      }
+      seen[k].n += 1;
+    });
+    series.forEach((s) => { s.count = n(s.n); });
+    const total = real.filter((p) => p.projet || p.serie).length;
+    return {
+      projects: projects, series: series, hasSeries: series.length > 0,
+      nReportages: projects.length + ' reportage' + (projects.length > 1 ? 's' : ''),
+      nSeries: series.length + ' série' + (series.length > 1 ? 's' : ''),
+      total: n(total),
+      guardMenu: (e) => { if (e && e.target && e.target.tagName === 'IMG') e.preventDefault(); }
+    };
+  }
+}
+</script>
+</body>
+</html>

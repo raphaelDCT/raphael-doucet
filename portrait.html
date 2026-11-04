@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portrait — Raphaël Doucet, photographe en Bretagne</title>
+<meta name="description" content="Portfolio de Raphaël Doucet, photographe professionnel indépendant basé en Bretagne. Photographie sportive, événementielle, portrait, paysage et création de contenu.">
+<script src="./support.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/transitions.css">
+<script src="js/donnees-site.js"></script>
+<script src="js/traduction.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Geist:wght@300;400;500;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="page">
+<div style="position: sticky; top: 0; z-index: 40">
+<dc-import name="SiteNav" current="portfolio" hint-size="100%,64px"></dc-import>
+</div>
+<main class="page-main">
+<div class="band-sand">
+<nav class="crumb" aria-label="Fil d’Ariane"><a href="portfolio.html">Portfolio</a><span class="crumb-sep" aria-hidden="true">/</span><span aria-current="page">Portrait</span></nav>
+<header class="phead after-crumb">
+<div class="sec-head">
+<span class="sec-num">03 — Portrait</span>
+<h1 class="sec-title">Portrait</h1>
+<p class="sec-note">Portraits et photographie humaine.</p>
+</div>
+</header>
+<div class="gal">
+<sc-if value="{{ hasProjects }}" hint-placeholder-val="{{ true }}">
+<div class="rlist" onContextMenu="{{ guardMenu }}">
+<sc-for list="{{ projects }}" as="pr" hint-placeholder-count="1">
+<a class="rcard" href="{{ pr.page }}">
+<span class="rcard-m">
+<sc-if value="{{ pr.hasFile }}" hint-placeholder-val="{{ false }}"><img src="{{ pr.fichier }}" alt="" loading="lazy" decoding="async" draggable="false"></sc-if>
+<sc-if value="{{ pr.noFile }}" hint-placeholder-val="{{ true }}"><span class="ph"><span class="ph-k">Image du reportage à importer</span><span class="ph-id">{{ pr.id }}</span></span></sc-if>
+</span>
+<span class="rcard-i">
+<span class="rcard-k"><span class="{{ pr.kickerCls }}">{{ pr.surtitre }}</span></span>
+<span class="rcard-t"><span class="{{ pr.titreCls }}">{{ pr.titre }}</span></span>
+<sc-if value="{{ pr.hasSub }}" hint-placeholder-val="{{ true }}"><span class="rcard-s">{{ pr.sousTitre }}</span></sc-if>
+<span class="rcard-c">{{ pr.count }}</span>
+<span class="more">Voir le reportage <span aria-hidden="true">→</span></span>
+</span>
+</a>
+</sc-for>
+</div>
+</sc-if>
+<sc-if value="{{ hasLoose }}" hint-placeholder-val="{{ false }}">
+<div class="subhead"><h2 class="subhead-t">Galeries</h2><span class="project-count">{{ looseCount }}</span></div>
+<dc-import name="Gallery" source="libre:portrait" layout="portraits" group="serie" hint-size="100%,1200px"></dc-import>
+</sc-if>
+</div>
+</div>
+<nav class="catnav" aria-label="Poursuivre la visite">
+<a href="portfolio.html"><span class="catnav-k">← Retour</span><span class="catnav-t">Portfolio</span></a>
+<a href="animalier.html"><span class="catnav-k">Catégorie suivante →</span><span class="catnav-t">Animalier</span></a>
+</nav>
+</main>
+<dc-import name="SiteFooter" hint-size="100%,180px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview": {"width": 1440, "height": 900}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const D = window.RD || { photos: [], projets: [] };
+    const photos = D.photos || [];
+    const byId = {};
+    (D.photos || []).forEach((p) => { byId[p.id] = p; });
+    const ph = (id) => {
+      const p = byId[id] || { id: id || '—' };
+      return { id: p.id, fichier: p.fichier || '', hasFile: !!p.fichier, noFile: !p.fichier, categorie: p.categorie || '' };
+    };
+    const guardMenu = (e) => { if (e && e.target && e.target.tagName === 'IMG') e.preventDefault(); };
+    const n = (k) => k + ' image' + (k > 1 ? 's' : '');
+    /* Un projet n’apparaît que s’il contient au moins une photo importée. */
+    const real = photos.filter((p) => p && p.fichier);
+    const projects = (D.projets || []).filter((pr) => pr.categorie === 'portrait' && real.some((p) => p.projet === pr.id)).map((pr) => {
+      const list = real.filter((p) => p.projet === pr.id);
+      const cover = ph(list.some((p) => p.id === pr.couverture) ? pr.couverture : list[0].id);
+      return Object.assign(cover, {
+        id: cover.id, page: pr.page || 'portfolio.html',
+        titre: pr.titre || '[Nom du reportage]', titreCls: pr.titre ? '' : 'todo',
+        surtitre: pr.surtitre || '[Type · lieu · date]', kickerCls: pr.surtitre ? '' : 'todo',
+        sousTitre: pr.sousTitre || '', hasSub: !!pr.sousTitre,
+        count: n(list.length)
+      });
+    });
+    const loose = real.filter((p) => p.categorie === 'portrait' && !p.projet);
+    return {
+      projects: projects, hasProjects: projects.length > 0,
+      hasLoose: loose.length > 0, looseCount: n(loose.length),
+      guardMenu: guardMenu
+    };
+  }
+}
+</script>
+</body>
+</html>

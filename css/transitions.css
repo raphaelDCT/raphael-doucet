@@ -1,0 +1,53 @@
+/* =====================================================================
+   RAPHAËL DOUCET — TRANSITIONS DE PAGE
+   1. Sortie : la page quittée s’efface en fondu (View Transitions,
+      Chrome, Edge, Safari ; les autres navigateurs changent de page
+      normalement).
+   2. Entrée : le contenu de la nouvelle page apparaît en fondu en
+      remontant légèrement, bloc par bloc (tous les navigateurs).
+   Le menu reste fixe pendant la transition.
+   ===================================================================== */
+
+/* 1 · Transition entre deux pages du site */
+@view-transition { navigation: auto; }
+
+::view-transition-old(root) {
+  animation: rd-page-out .28s cubic-bezier(.4, 0, 1, 1) both;
+}
+::view-transition-new(root) {
+  animation: none;
+}
+@keyframes rd-page-out {
+  to { opacity: 0; }
+}
+
+/* 2 · Apparition du contenu de la page */
+@keyframes rd-page-in {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: none; }
+}
+/* « backwards » : l’effet s’arrête complètement à la fin de l’animation,
+   ce qui ne gêne pas la visionneuse photo plein écran. */
+.page-main > * {
+  animation: rd-page-in .7s cubic-bezier(.2, .7, .2, 1) backwards;
+}
+.page-main > :nth-child(2) { animation-delay: .08s; }
+.page-main > :nth-child(3) { animation-delay: .16s; }
+.page-main > :nth-child(4) { animation-delay: .24s; }
+.page-main > :nth-child(n+5) { animation-delay: .3s; }
+
+/* Pied de page : simple fondu, après le contenu */
+.foot {
+  animation: rd-fade-in .6s ease .25s backwards;
+}
+@keyframes rd-fade-in {
+  from { opacity: 0; }
+}
+
+/* Respect du réglage « réduire les animations » */
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(root),
+  ::view-transition-new(root) { animation: none; }
+  .page-main > *,
+  .foot { animation: none; }
+}

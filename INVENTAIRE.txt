@@ -1,0 +1,203 @@
+INVENTAIRE DU SITE — RAPHAËL DOUCET, PHOTOGRAPHE ET VIDÉASTE
+Version finale du 3 novembre 2026 (canvas version 59)
+
+RÉSUMÉ
+  Fichiers au total ........ 151  (dont ce fichier INVENTAIRE.txt)
+  Poids total .............. 46.4 Mo  (photos : 45.9 Mo)
+  Pages HTML ............... 18
+  Composants partagés ...... 3  (SiteNav, SiteFooter, Gallery — fichiers .dc.html)
+  Feuilles de style ........ 2  (css/style.css, css/transitions.css)
+  Scripts .................. 3  (support.js, js/donnees-site.js, js/traduction.js)
+  Photographies ............ 119  (dossier images/)
+  Vignette vidéo ........... 1  (images/video-penmarch-miniature.jpg)
+  Fichiers dans images/ .... 120
+  Vidéo .................... 1  hébergée sur YouTube (PENMARC’H — Entre terre et mer)
+  Reportages ............... 7
+  Documents ................ 4  (LISEZMOI, INVENTAIRE, PROBLEMES_A_RESOUDRE, PUBLIER_SUR_GITHUB_PAGES)
+  Fichier technique ........ 1  (.nojekyll, invisible sur Mac)
+  Polices / logos .......... 0 fichier (Google Fonts ; logo typographique)
+
+PHOTOGRAPHIES PAR REPORTAGE ET GALERIE
+  Image d’accueil : 1
+  Reportage MERLÉAC 2026 (sport) : 16
+  Reportage FESTIVAL DE CORNOUAILLE (evenementiel) : 14
+  Reportage FÊTE SAINTE-JULIENNE (evenementiel) : 17
+  Reportage COURSES DE TRACTEUR TONDEUSE (evenementiel) : 15
+  Reportage EN ATTENDANT (portrait) : 15
+  Archives (non affichées en Portrait) — Couple / Grossesse : 6
+  Galerie Animalier — Animaux domestiques : 5
+  Reportage GUINGAMP FÉMININES 2024 (sport) : 16
+  Reportage CROSS-COUNTRY 2024 (sport) : 14
+  TOTAL : 119
+
+PAGES
+  a-propos.html
+  animalier.html
+  contact.html
+  evenementiel.html
+  index.html
+  portfolio.html
+  portrait.html
+  prestations.html
+  projets.html
+  reportage-cross-country-2024.html
+  reportage-en-attendant.html
+  reportage-festival-cornouaille.html
+  reportage-fete-sainte-julienne.html
+  reportage-guingamp-feminines-2024.html
+  reportage-merleac-2026.html
+  reportage-tondeuse-glomel-2024.html
+  sport.html
+  video.html
+
+LISTE DÉTAILLÉE DES FICHIERS (taille en octets, empreinte SHA-256 abrégée)
+  .nojekyll                                                    0  e3b0c44298fc1c14
+  a-propos.html                                             3970  1528500510dda7b9
+  animalier.html                                            2438  855b465e955c9011
+  contact.html                                             15771  30fc43163932742b
+  css/style.css                                            28800  4458a3e19ea9b031
+  css/transitions.css                                       1819  719600b08d989b57
+  evenementiel.html                                         5177  0302aa59541ea51e
+  Gallery.dc.html                                          14275  c8ddc460dab159a7
+  index.html                                               19152  75dea140969999e3
+  js/donnees-site.js                                       35942  a379af71302ea4db
+  js/traduction.js                                         45141  e9992e08d5589b91
+  LISEZMOI.txt                                              3271  5783d026473c5674
+  portfolio.html                                            3918  af916603810fb096
+  portrait.html                                             5080  f8addc3ac3f91280
+  prestations.html                                         15232  b47053942ba314a3
+  PROBLEMES_A_RESOUDRE.txt                                  3896  f23495543ec88fc2
+  projets.html                                              6220  805c792cbe7187c2
+  PUBLIER_SUR_GITHUB_PAGES.txt                              3462  64f5f16bfbb7cba1
+  reportage-cross-country-2024.html                         3536  340fec9cb770ff8d
+  reportage-en-attendant.html                               3508  c53ad92482e837f2
+  reportage-festival-cornouaille.html                       3551  2889951a46310530
+  reportage-fete-sainte-julienne.html                       3555  3f2185422e4c4d5e
+  reportage-guingamp-feminines-2024.html                    3550  78a40f62a788c306
+  reportage-merleac-2026.html                               3526  2c4c970858b56ea8
+  reportage-tondeuse-glomel-2024.html                       3584  0fb8512046e1d4b9
+  SiteFooter.dc.html                                        1945  76f6ffe303dadfe5
+  SiteNav.dc.html                                           5664  4ce9ea11e7a8db85
+  sport.html                                                4877  42b0bb2efbdbf6ca
+  support.js                                              188749  b795ee21261f2e7d
+  video.html                                               18137  29c9358c24c4e998
+  images/accueil-01.jpg                                   307775  ea767445cdb898fd
+  images/animalier-01.jpg                                 148107  2d8ac7cde35e69f1
+  images/animalier-02.jpg                                 165358  ff835ad004e02dff
+  images/animalier-03.jpg                                 194495  556286c84d50cc6a
+  images/animalier-04.jpg                                 199558  985017bfcfbb4b4f
+  images/animalier-06.jpg                                 220200  ddd877957934c519
+  images/cornouaille-01.jpg                               491492  8b6a35a0e02610fa
+  images/cornouaille-02.jpg                               382110  7d8b757ce1f30758
+  images/cornouaille-03.jpg                               392147  4d8c9e8613957d5f
+  images/cornouaille-04.jpg                               409481  e338e0691ce1138f
+  images/cornouaille-05.jpg                               283239  92509f2a50243902
+  images/cornouaille-06.jpg                               498449  215d294c7e642b83
+  images/cornouaille-07.jpg                               374928  dac13951b9c98a17
+  images/cornouaille-08.jpg                               309467  9e0ca6be56f898ef
+  images/cornouaille-09.jpg                               447628  c7223b7ff03e764b
+  images/cornouaille-10.jpg                               302361  202b0ccbcdab1c39
+  images/cornouaille-11.jpg                               245313  a8644e7867090e5f
+  images/cornouaille-12.jpg                               456465  e6acff5d5484c512
+  images/cornouaille-13.jpg                               595900  fdc4e63803f7c670
+  images/cornouaille-14.jpg                               380610  b2415ca58d98749b
+  images/en-attendant-01.jpg                              609480  a60f53b0d8f3f2aa
+  images/en-attendant-02.jpg                              603720  baa79ac103b14e42
+  images/en-attendant-03.jpg                              344903  6fc119837230e547
+  images/en-attendant-04.jpg                              356460  72727633cad6115e
+  images/en-attendant-05.jpg                              274691  dfd80c977ad68cc5
+  images/en-attendant-06.jpg                              453548  9ea6529b0403c5d9
+  images/en-attendant-07.jpg                              200526  166eccfc0635c119
+  images/en-attendant-08.jpg                              122989  f2c612f55b823cb0
+  images/en-attendant-09.jpg                              410422  0f39bb3f41b91175
+  images/en-attendant-10.jpg                              352642  a985cbb30fbb1601
+  images/en-attendant-11.jpg                              538630  ee9ac2c93478073a
+  images/en-attendant-12.jpg                              430736  3310a5cea26f8b98
+  images/en-attendant-13.jpg                              161489  a62fea6e9b4495d2
+  images/en-attendant-14.jpg                              148091  8525c28a90cd0da6
+  images/en-attendant-15.jpg                              363262  bdca0ba8d06f161e
+  images/guingamp-match-01.jpg                            363374  7bfb02b7c9d70995
+  images/guingamp-match-02.jpg                            232807  44622b8937602b48
+  images/guingamp-match-03.jpg                            346013  f6ad318e7791fa2a
+  images/guingamp-match-04.jpg                            452279  5e5b01612ca20f93
+  images/guingamp-match-05.jpg                            375572  d9edc63749958d7b
+  images/guingamp-match-06.jpg                            215009  1437bc920ff7680a
+  images/guingamp-match-07.jpg                            269005  ab24f8fc57caf4ff
+  images/guingamp-match-08.jpg                            211062  90e0979edb0b1686
+  images/guingamp-match-09.jpg                            197537  387a9884e57ef95b
+  images/guingamp-match-10.jpg                            290415  915bc6ecf31e292e
+  images/guingamp-match-11.jpg                            251098  5944ecc2dea8f3a5
+  images/guingamp-match-12.jpg                            403792  6bde50b231d76420
+  images/guingamp-match-13.jpg                            414088  69f2e6540f072c25
+  images/guingamp-match-14.jpg                            233133  8705e1e0a4779d7f
+  images/guingamp-match-15.jpg                            404899  7ed964d513fa292c
+  images/guingamp-match-16.jpg                            152433  087d77104c18a5a1
+  images/merleac-01.jpg                                   331993  389df361e80185dc
+  images/merleac-02.jpg                                   333445  5b883bc3f528e9df
+  images/merleac-03.jpg                                   438024  45438b5d20e80d0b
+  images/merleac-04.jpg                                   353648  73d086571fdc390e
+  images/merleac-05.jpg                                   430368  c02611046f65b1ce
+  images/merleac-06.jpg                                   246260  1336c43f636a5d4a
+  images/merleac-07.jpg                                   545807  03cbb330c2b035c9
+  images/merleac-08.jpg                                   452097  ebb497ab0c154ae7
+  images/merleac-09.jpg                                   497129  d8e24a6f53e8b51c
+  images/merleac-10.jpg                                   511383  faf4da94b772ae46
+  images/merleac-11.jpg                                   464152  67f6111d1532fb52
+  images/merleac-12.jpg                                   642832  05ccddd54e3341cc
+  images/merleac-13.jpg                                   486802  53c8f3c9c32d8250
+  images/merleac-14.jpg                                   405424  e9b70234cff38de8
+  images/merleac-15.jpg                                   302323  905ea50b3cf34865
+  images/merleac-16.jpg                                   316138  a912fb7d2febf071
+  images/portrait-01.jpg                                  190222  84ad39021d91ce1c
+  images/portrait-02.jpg                                  147077  66db0e7ad91ce4b5
+  images/portrait-03.jpg                                  108793  f386ade5fc83b617
+  images/portrait-04.jpg                                  381547  cf221489b1e9340c
+  images/portrait-05.jpg                                  183534  dec8130bb4484ae2
+  images/portrait-06.jpg                                  366343  c1888d442673168a
+  images/sainte-julienne-01.jpg                           869437  efbbd4b9e680ae6a
+  images/sainte-julienne-02.jpg                           322781  fe325179c95d2492
+  images/sainte-julienne-03.jpg                           469695  5dcb6426a73064b2
+  images/sainte-julienne-04.jpg                           776908  abb04ec5c01de74f
+  images/sainte-julienne-05.jpg                           925460  71ee1fb5a90a16d4
+  images/sainte-julienne-06.jpg                           511075  8242f436e316cf1d
+  images/sainte-julienne-07.jpg                           395683  31af0f752add0932
+  images/sainte-julienne-08.jpg                           727345  d7964a19a794ced6
+  images/sainte-julienne-09.jpg                           422475  e1690f338a7b21f9
+  images/sainte-julienne-10.jpg                           322398  c1792f810e14ffc0
+  images/sainte-julienne-11.jpg                           410994  d1bb12706968e3bc
+  images/sainte-julienne-12.jpg                           373227  3686b3e36e82313b
+  images/sainte-julienne-13.jpg                           534576  67143c9a608c1ce0
+  images/sainte-julienne-14.jpg                           439066  4de911a5243cd6d4
+  images/sainte-julienne-16.jpg                           529356  977b2279ab32b23b
+  images/sainte-julienne-17.jpg                           522483  88833108bc758645
+  images/sainte-julienne-18.jpg                           301326  48e007dff29f1215
+  images/sport-12.jpg                                     161911  2bcf16b7deb52d2a
+  images/sport-13.jpg                                     222772  818de082f56fea4c
+  images/sport-14.jpg                                     154275  bbe74d38f301848b
+  images/sport-15.jpg                                     185627  f2b7c3b60dbedba5
+  images/sport-16.jpg                                     241114  43ed57de1ecd5d2c
+  images/sport-17.jpg                                     127062  71d3e5e44ab181f9
+  images/sport-18.jpg                                     189327  8d09ed1979c90d3a
+  images/sport-19.jpg                                     305600  22ec171537c14daa
+  images/sport-20.jpg                                     357851  ea17b1157642d86f
+  images/sport-21.jpg                                     271602  b69c2f6d6fa49b64
+  images/sport-22.jpg                                     344554  8481762f3ae10d41
+  images/sport-23.jpg                                     258678  86b281b0d121c8ab
+  images/sport-24.jpg                                     490854  87a2192bbe27f6bd
+  images/sport-25.jpg                                     617171  5373a489e345052f
+  images/tondeuse-glomel-01.jpg                           551039  092a81ef8b44abb1
+  images/tondeuse-glomel-02.jpg                           929640  0187ebf80d3bbe3d
+  images/tondeuse-glomel-03.jpg                           651718  dcc5ac9ca7a06098
+  images/tondeuse-glomel-04.jpg                           356048  1e9c611effb73871
+  images/tondeuse-glomel-05.jpg                           316845  0f4d45375c448bd2
+  images/tondeuse-glomel-06.jpg                           498156  ea08c6c2e1c360a8
+  images/tondeuse-glomel-07.jpg                           581867  030f7028a6835046
+  images/tondeuse-glomel-08.jpg                           388882  685db0c4747fbae4
+  images/tondeuse-glomel-09.jpg                           468528  7b1514f29edaa47d
+  images/tondeuse-glomel-10.jpg                           460065  55e9d0d90e088e72
+  images/tondeuse-glomel-11.jpg                           488935  221976b68243fac7
+  images/tondeuse-glomel-12.jpg                           489347  5d255a33ac881473
+  images/tondeuse-glomel-13.jpg                           515644  3a9f88942c1ae6a1
+  images/tondeuse-glomel-14.jpg                           532823  2e1f8d73a7756312
+  images/tondeuse-glomel-15.jpg                           564285  b2f26139d745ed1c
+  images/video-penmarch-miniature.jpg                     198313  5ee53c956105f41f

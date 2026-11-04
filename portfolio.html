@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio — Raphaël Doucet, photographe en Bretagne</title>
+<meta name="description" content="Portfolio de Raphaël Doucet, photographe en Bretagne : sport, événementiel, portrait, Bretagne et animalier.">
+<script src="./support.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/transitions.css">
+<script src="js/donnees-site.js"></script>
+<script src="js/traduction.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Geist:wght@300;400;500;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+/* Une seule catégorie visible : la carte occupe toute la largeur de la grille */
+.pcard.full{grid-column:1/-1}
+.pcard.full .pcard-media{aspect-ratio:16/9}
+@media (max-width:600px){.pcard.full .pcard-media{aspect-ratio:4/5}}
+</style>
+</helmet>
+<div class="page">
+<div style="position: sticky; top: 0; z-index: 40">
+<dc-import name="SiteNav" current="portfolio" hint-size="100%,64px"></dc-import>
+</div>
+<main class="page-main">
+<header class="phead">
+<div class="sec-head">
+<span class="sec-num">01</span>
+<h1 class="sec-title">Portfolio</h1>
+<p class="sec-note">Mon travail, organisé par catégorie. Choisissez une catégorie pour découvrir les galeries et les reportages.</p>
+</div>
+</header>
+<div class="gal">
+<sc-if value="{{ hasCats }}" hint-placeholder-val="{{ true }}">
+<div class="pcards" onContextMenu="{{ guardMenu }}">
+<sc-for list="{{ cats }}" as="c" hint-placeholder-count="5">
+<a class="{{ c.cls }}" href="{{ c.page }}" aria-label="{{ c.aria }}">
+<span class="pcard-media">
+<img src="{{ c.fichier }}" alt="" loading="lazy" decoding="async" draggable="false">
+</span>
+<span class="pcard-b">
+<span class="pcard-n">{{ c.num }}</span>
+<span class="pcard-t">{{ c.titre }}</span>
+<span class="pcard-go">Explorer <span aria-hidden="true">→</span></span>
+<span class="pcard-d">{{ c.description }}</span>
+</span>
+</a>
+</sc-for>
+</div>
+</sc-if>
+</div>
+</main>
+<dc-import name="SiteFooter" hint-size="100%,180px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview": {"width": 1440, "height": 900}}'>
+/* Page Portfolio : une catégorie n’apparaît que si elle contient au moins
+   une photo réellement importée (champ « fichier » renseigné).
+   Les catégories vides restent dans les données mais sont masquées. */
+function portfolioCards(D) {
+  const photos = (D.photos || []).filter((p) => p && p.fichier);
+  const visible = [];
+  (D.categories || []).forEach((c) => {
+    const list = photos.filter((p) => p.categorie === c.id);
+    if (!list.length) return;
+    const cover = list.find((p) => p.id === c.couverture) || list[0];
+    visible.push({ c: c, cover: cover });
+  });
+  const n = visible.length;
+  /* Grille de 6 colonnes : 1 → pleine largeur · 2 et 4 → demi-largeur ·
+     3 → tiers · 5 → 2 demi + 3 tiers */
+  const size = (i) => {
+    if (n === 1) return 'pcard full';
+    if (n === 2 || n === 4) return 'pcard big';
+    if (n === 3) return 'pcard';
+    return i < 2 ? 'pcard big' : 'pcard';
+  };
+  return visible.map((v, i) => ({
+    id: v.cover.id, fichier: v.cover.fichier,
+    titre: v.c.titre, description: v.c.description || '', page: v.c.page,
+    num: String(i + 1).padStart(2, '0'), cls: size(i),
+    aria: v.c.titre + ' — ' + (v.c.description || '')
+  }));
+}
+class Component extends DCLogic {
+  renderVals() {
+    const D = window.RD || { photos: [], categories: [] };
+    const cats = portfolioCards(D);
+    const guardMenu = (e) => { if (e && e.target && e.target.tagName === 'IMG') e.preventDefault(); };
+    return { cats: cats, hasCats: cats.length > 0, guardMenu: guardMenu };
+  }
+}
+</script>
+</body>
+</html>

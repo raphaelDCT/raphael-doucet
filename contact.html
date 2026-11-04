@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact et devis — Raphaël Doucet, photographe et vidéaste à Gourin, Bretagne</title>
+<meta name="description" content="Demandez un devis personnalisé à Raphaël Doucet, photographe et vidéaste indépendant basé à Gourin (Bretagne), déplacements partout en France.">
+<script src="./support.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/transitions.css">
+<script src="js/donnees-site.js"></script>
+<script src="js/traduction.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Geist:wght@300;400;500;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+.ct{box-sizing:border-box;width:100%;max-width:1320px;margin:0 auto;padding:clamp(56px,7vw,112px) clamp(20px,5vw,72px) clamp(88px,10vw,152px);color:#151514}
+.ct *,.ct *::before,.ct *::after{box-sizing:border-box}
+.ct-k{display:flex;gap:14px;align-items:baseline;font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#5F5B54;padding-bottom:18px;border-bottom:1px solid #D8D3C9;margin-bottom:clamp(40px,5vw,72px)}
+.ct-k b{font-weight:500;color:#151514}
+.ct-g{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;row-gap:56px;align-items:start}
+.ct-l{grid-column:1/8;display:flex;flex-direction:column;gap:32px;min-width:0}
+.ct-r{grid-column:9/13;display:flex;flex-direction:column;gap:32px;min-width:0;position:sticky;top:96px}
+@media (max-width:960px){.ct-l,.ct-r{grid-column:1/-1}.ct-r{position:static}}
+
+.ct-t{margin:0;font-family:'Instrument Serif','Times New Roman',Georgia,serif;font-weight:400;font-size:clamp(56px,7.4vw,112px);line-height:.94;letter-spacing:-.015em}
+.ct-t em{font-style:italic;color:#5F5B54}
+.ct-lede{margin:0;max-width:46ch;font-size:17px;line-height:1.65;color:#3E3B36}
+
+/* Formulaire */
+.ct-form{display:flex;flex-direction:column;gap:20px}
+.ct-f2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+@media (max-width:560px){.ct-f2{grid-template-columns:1fr}}
+.ct-f{display:flex;flex-direction:column;gap:8px;min-width:0;border:0;padding:0;margin:0}
+.ct-fl{font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#4A4741;padding:0}
+.ct-f input,.ct-f textarea{width:100%;min-height:52px;padding:14px 16px;font:inherit;font-size:16px;color:#151514;background:#FBFAF6;border:1px solid #BDB6AA;border-radius:0;-webkit-appearance:none;appearance:none;transition:border-color .2s}
+.ct-f textarea{resize:vertical;min-height:160px;line-height:1.55}
+.ct-f input:hover,.ct-f textarea:hover{border-color:#7A756C}
+.ct-f input:focus,.ct-f textarea:focus{outline:2px solid #151514;outline-offset:0;border-color:#151514}
+.ct-f input::placeholder,.ct-f textarea::placeholder{color:#7A756C}
+
+.ct-chips{display:flex;flex-wrap:wrap;gap:8px}
+.ct-chip{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;font:inherit;font-size:15px;color:#151514;background:transparent;border:1px solid #BDB6AA;border-radius:0;cursor:pointer;transition:background .2s,border-color .2s,color .2s}
+.ct-chip:hover{border-color:#151514}
+.ct-chip.on{background:#151514;border-color:#151514;color:#F4F1EA}
+.ct-chip:focus-visible{outline:2px solid #151514;outline-offset:2px}
+
+.ct-send{display:flex;align-items:center;gap:20px;flex-wrap:wrap;padding-top:4px}
+.ct-btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:56px;padding:0 32px;font:inherit;font-size:16px;text-decoration:none;color:#F4F1EA;background:#151514;border:1px solid #151514;border-radius:0;cursor:pointer;transition:background .3s}
+.ct-btn:hover{background:#3E3B36;border-color:#3E3B36}
+.ct-btn:disabled{opacity:.6;cursor:progress}
+.ct-btn:focus-visible{outline:2px solid #151514;outline-offset:3px}
+.ct-btn.line{color:#151514;background:transparent}
+.ct-btn.line:hover{color:#F4F1EA;background:#151514}
+@media (max-width:480px){.ct-btn{flex:1 1 100%}}
+.ct-note{margin:0;font-size:14px;line-height:1.55;color:#5F5B54}
+.ct-err{margin:0;padding:14px 16px;font-size:15px;line-height:1.5;color:#7A1F14;background:#F6E3DE;border:1px solid #E0B4AA}
+
+/* Confirmation */
+.ct-ok{display:flex;flex-direction:column;align-items:flex-start;gap:18px;padding:clamp(28px,3vw,44px);background:#EDE8DE;border:1px solid #D8D3C9}
+.ct-ok-i{display:inline-flex;align-items:center;justify-content:center;width:52px;height:52px;border-radius:50%;background:#151514;color:#F4F1EA}
+.ct-ok-t{margin:0;font-family:'Instrument Serif','Times New Roman',Georgia,serif;font-size:clamp(34px,3vw,48px);line-height:1}
+.ct-ok-p{margin:0;font-size:17px;line-height:1.6;color:#3E3B36;max-width:46ch}
+.ct-demo{margin:0;font-size:13px;line-height:1.5;color:#5F5B54;font-style:italic}
+
+/* Coordonnées */
+.ct-id{display:flex;flex-direction:column;gap:4px}
+.ct-name{margin:0;font-family:'Instrument Serif','Times New Roman',Georgia,serif;font-size:clamp(30px,2.6vw,40px);line-height:1.05}
+.ct-role{margin:0;font-size:16px;color:#3E3B36}
+.ct-loc{margin:10px 0 0;display:flex;align-items:center;gap:8px;font-size:15px;color:#5F5B54}
+.ct-loc svg{flex:none}
+.ct-alt{margin:0;font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#5F5B54}
+.ct-rows{display:flex;flex-direction:column;border-top:1px solid #151514;margin-top:-16px}
+.ct-row{display:grid;grid-template-columns:100px minmax(0,1fr) auto;gap:14px;align-items:center;min-height:60px;padding:12px 0;border-bottom:1px solid #D8D3C9;text-decoration:none;color:#151514;transition:padding .3s ease,background .3s ease}
+.ct-row:hover{padding-left:10px;padding-right:10px;background:rgba(21,21,20,.04)}
+.ct-row:focus-visible{outline:2px solid #151514;outline-offset:2px}
+.ct-row-l{font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#5F5B54}
+.ct-row-v{font-size:16px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ct-row-a{font-family:'Geist Mono',ui-monospace,monospace;font-size:14px;color:#5F5B54;transition:transform .3s,color .3s}
+.ct-row:hover .ct-row-a{transform:translateX(3px);color:#151514}
+@media (max-width:480px){.ct-row{grid-template-columns:minmax(0,1fr) auto;row-gap:2px}.ct-row-l{grid-column:1/-1}}
+.ct-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+</style>
+</helmet>
+<div class="page">
+<div style="position: sticky; top: 0; z-index: 40">
+<dc-import name="SiteNav" current="contact" hint-size="100%,64px"></dc-import>
+</div>
+<main class="page-main">
+<section class="ct" aria-labelledby="ct-title">
+<div class="ct-k"><b>06</b>Contact</div>
+<div class="ct-g">
+
+<div class="ct-l">
+<h1 class="ct-t" id="ct-title">Un projet ?<br><em>Parlons-en.</em></h1>
+
+<sc-if value="{{ showForm }}" hint-placeholder-val="{{ true }}">
+<p class="ct-lede">Décrivez votre projet en quelques mots : je vous réponds personnellement, avec un devis personnalisé et sans engagement.</p>
+<form class="ct-form" onSubmit="{{ submit }}" aria-label="Envoyer un message">
+<div class="ct-f2">
+<label class="ct-f"><span class="ct-fl">Nom</span><input name="nom" type="text" autocomplete="name" required="" placeholder="Votre nom"></label>
+<label class="ct-f"><span class="ct-fl">Email</span><input name="email" type="email" autocomplete="email" required="" placeholder="vous@exemple.fr"></label>
+</div>
+<fieldset class="ct-f">
+<legend class="ct-fl">Type de prestation</legend>
+<div class="ct-chips" style="margin-top: 8px">
+<sc-for list="{{ types }}" as="t" hint-placeholder-count="10">
+<button type="button" class="{{ t.cls }}" aria-pressed="{{ t.pressed }}" onClick="{{ t.pick }}">{{ t.label }}</button>
+</sc-for>
+</div>
+</fieldset>
+<label class="ct-f"><span class="ct-fl">Message</span><textarea name="message" rows="6" required="" placeholder="Date, lieu, ce que vous imaginez…"></textarea></label>
+<label class="ct-hp" aria-hidden="true">Ne pas remplir<input name="botcheck" type="text" tabIndex="-1" autocomplete="off"></label>
+<sc-if value="{{ hasError }}" hint-placeholder-val="{{ false }}">
+<p class="ct-err" role="alert">L’envoi n’a pas abouti. Réessayez dans un instant, ou écrivez-moi à {{ email }}.</p>
+</sc-if>
+<div class="ct-send">
+<button type="submit" class="ct-btn" disabled="{{ sending }}">{{ sendLabel }} <span aria-hidden="true">→</span></button>
+<p class="ct-note">Vos informations servent uniquement à vous répondre.</p>
+</div>
+</form>
+</sc-if>
+
+<sc-if value="{{ isSent }}" hint-placeholder-val="{{ false }}">
+<div class="ct-ok" role="status">
+<span class="ct-ok-i" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>
+<p class="ct-ok-t">Message envoyé.</p>
+<p class="ct-ok-p">Merci {{ sentName }}, j’ai bien reçu votre demande. Je reviens vers vous très vite à l’adresse indiquée.</p>
+<button type="button" class="ct-btn line" onClick="{{ reset }}">Envoyer un autre message</button>
+<sc-if value="{{ isDemo }}" hint-placeholder-val="{{ false }}"><p class="ct-demo">Aperçu : l’envoi réel s’active en renseignant la clé du service de formulaire.</p></sc-if>
+</div>
+</sc-if>
+</div>
+
+<aside class="ct-r" aria-label="Coordonnées">
+<div class="ct-id">
+<p class="ct-name">Raphaël Doucet</p>
+<p class="ct-role">Photographe et vidéaste indépendant</p>
+<p class="ct-loc"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"></path><circle cx="12" cy="10" r="2.3"></circle></svg>Gourin, Bretagne, France · déplacements partout en France</p>
+</div>
+<p class="ct-alt">Ou directement</p>
+<nav class="ct-rows" aria-label="Coordonnées directes">
+<a class="ct-row" href="{{ emailHref }}"><span class="ct-row-l">Email</span><span class="ct-row-v">{{ email }}</span><span class="ct-row-a" aria-hidden="true">→</span></a>
+<a class="ct-row" href="{{ telHref }}"><span class="ct-row-l">Téléphone</span><span class="ct-row-v">{{ telAff }}</span><span class="ct-row-a" aria-hidden="true">→</span></a>
+<a class="ct-row" href="{{ igHref }}" target="_blank" rel="noopener"><span class="ct-row-l">Instagram</span><span class="ct-row-v">@{{ ig }}</span><span class="ct-row-a" aria-hidden="true">↗</span></a>
+</nav>
+</aside>
+
+</div>
+</section>
+</main>
+<dc-import name="SiteFooter" hint-size="100%,180px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"cleFormulaire": {"editor": "text", "default": "88ded270-553b-4147-8215-256c4a559abb"},"$preview": {"width": 1440, "height": 900}}'>
+/* Formulaire de contact à envoi direct (sans ouvrir la messagerie du visiteur).
+   Service : Web3Forms (gratuit). Renseigner la clé reçue par email dans la
+   propriété « cleFormulaire » de cet artboard. Sans clé : mode aperçu,
+   la confirmation s'affiche mais rien n'est envoyé.
+   Clé publique Web3Forms (faite pour figurer dans la page) : les demandes
+   arrivent sur l'adresse email du compte Web3Forms qui l'a créée. */
+const CLE_WEB3FORMS = '88ded270-553b-4147-8215-256c4a559abb';
+const DELAI_ENVOI_MS = 20000;
+const TYPES = ['Photographie sportive', 'Portrait', 'Grossesse', 'Portrait animalier', 'Événementiel', 'Paysage & patrimoine', 'Photographie de lieux', 'Prestations pour professionnels', 'Vidéo', 'Autre'];
+/* Présélection depuis la page Prestations (clé rd-devis) ou un ancien lien ?categorie= */
+const KEYS = { sport: 'Photographie sportive', portrait: 'Portrait', grossesse: 'Grossesse', animalier: 'Portrait animalier', evenementiel: 'Événementiel', 'paysage-patrimoine': 'Paysage & patrimoine', lieux: 'Photographie de lieux', professionnels: 'Prestations pour professionnels', video: 'Vidéo' };
+function presetType() {
+  let k = '';
+  try { k = new URLSearchParams(window.location.search).get('categorie') || ''; } catch (e) {}
+  try { const s = localStorage.getItem('rd-devis'); if (s) { k = k || s; localStorage.removeItem('rd-devis'); } } catch (e) {}
+  return KEYS[k] || '';
+}
+class Component extends DCLogic {
+  constructor(props) { super(props); this.state = { mode: 'form', type: presetType(), name: '' }; }
+  renderVals() {
+    const S = (window.RD || {}).site || {};
+    const email = S.email || 'raphael1doucet56@gmail.com';
+    const telAff = S.telephone || '06 95 24 33 08';
+    const tel = telAff.replace(/[^0-9+]/g, '').replace(/^0/, '+33');
+    const ig = S.instagram || '_raphael_visual';
+    const key = String(this.props.cleFormulaire || S.cleFormulaire || CLE_WEB3FORMS).trim();
+    const st = this.state || {};
+    const mode = st.mode || 'form';
+
+    const submit = (e) => {
+      if (e && e.preventDefault) e.preventDefault();
+      if (mode === 'sending') return;
+      const f = e && e.currentTarget;
+      const g = (k) => { try { return f && f.elements && f.elements[k] ? String(f.elements[k].value || '').trim() : ''; } catch (_) { return ''; } };
+      if (g('botcheck')) return;
+      const nom = g('nom');
+      const first = nom.split(/\s+/)[0] || '';
+      if (!key) { this.setState({ mode: 'sent', name: first, demo: true }); return; }
+      this.setState({ mode: 'sending' });
+      const data = {
+        access_key: key,
+        subject: 'Nouveau message du site' + (st.type ? ' — ' + st.type : ''),
+        from_name: 'Site Raphaël Doucet Photographie',
+        name: nom, email: g('email'), replyto: g('email'),
+        'Type de prestation': st.type || 'Non précisé',
+        message: g('message')
+      };
+      /* Échec géré dans tous les cas : réseau coupé, délai dépassé, réponse
+         refusée ou illisible. Le formulaire reste rempli pour pouvoir réessayer. */
+      const ctrl = typeof AbortController === 'function' ? new AbortController() : null;
+      const timer = setTimeout(() => { if (ctrl) ctrl.abort(); }, DELAI_ENVOI_MS);
+      const fail = (why) => {
+        clearTimeout(timer);
+        try { console.warn('[contact] envoi échoué :', why); } catch (_) {}
+        this.setState({ mode: 'error' });
+      };
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(data),
+        signal: ctrl ? ctrl.signal : undefined
+      }).then((r) => r.json().catch(() => ({ success: false, message: 'HTTP ' + r.status }))).then((res) => {
+        if (res && res.success) { clearTimeout(timer); this.setState({ mode: 'sent', name: first, demo: false }); }
+        else fail(res && res.message);
+      }).catch((err) => fail(err && err.name));
+    };
+
+    return {
+      showForm: mode !== 'sent', isSent: mode === 'sent', isDemo: !!st.demo,
+      sending: mode === 'sending', hasError: mode === 'error',
+      sendLabel: mode === 'sending' ? 'Envoi en cours…' : 'Envoyer le message',
+      sentName: st.name || '',
+      types: TYPES.map((t) => ({
+        label: t, cls: st.type === t ? 'ct-chip on' : 'ct-chip', pressed: st.type === t ? 'true' : 'false',
+        pick: () => this.setState({ type: st.type === t ? '' : t })
+      })),
+      submit: submit,
+      reset: () => this.setState({ mode: 'form', type: '', name: '', demo: false }),
+      email: email,
+      emailHref: 'mailto:' + email + '?subject=' + encodeURIComponent('Demande de projet'),
+      telAff: telAff.replace(/\./g, ' '), telHref: 'tel:' + tel,
+      ig: ig, igHref: 'https://www.instagram.com/' + ig + '/'
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+PUBLIER LE SITE SUR GITHUB PAGES — pas à pas
+=============================================
+
+AVANT DE COMMENCER
+- Le dépôt doit être PUBLIC (obligatoire pour GitHub Pages gratuit).
+- Envoie le CONTENU de ce dossier, pas le dossier lui-même : index.html doit
+  se trouver directement à la racine du dépôt (pas dans un sous-dossier).
+- Le fichier .nojekyll est invisible sur Mac (son nom commence par un point).
+  Pour l’afficher dans le Finder : ouvre ce dossier puis Cmd + Maj + . (point).
+  Il doit être envoyé avec le reste.
+- GitHub accepte 100 fichiers au maximum par envoi depuis le navigateur, et
+  25 Mo par fichier (la plus grosse photo fait moins de 1 Mo : aucun souci).
+
+
+1. ENVOYER LES FICHIERS
+
+   MÉTHODE CONSEILLÉE — GitHub Desktop (gratuit, tout part en une fois)
+   a) Installe GitHub Desktop (desktop.github.com) et connecte ton compte.
+   b) File › Clone repository › choisis ton dépôt › Clone.
+   c) Copie TOUT le contenu de ce dossier (Cmd + Maj + . pour voir .nojekyll,
+      puis Cmd + A, Cmd + C) et colle-le dans le dossier cloné.
+   d) Dans GitHub Desktop : écris « Site Raphaël Doucet » › Commit to main ›
+      Push origin.
+
+   MÉTHODE NAVIGATEUR (limite : 100 fichiers par envoi ; images = 120 fichiers)
+   a) Dans ton dépôt : Add file › Upload files. Sélectionne tout le contenu
+      de ce dossier SAUF le dossier « images » : fichiers .html, les 3 fichiers
+      .dc.html, support.js, .nojekyll, les dossiers css et js, les fichiers
+      .txt (31 fichiers). Glisse-les › Commit changes.
+   b) Crée le dossier images : Add file › Create new file › tape
+      images/LISEZ.txt , écris « photos du site » › Commit changes.
+   c) Ouvre le dossier images dans GitHub › Add file › Upload files.
+      Glisse les 60 premières photos (de accueil-01 à merleac-09, Finder trié
+      par nom) › Commit changes.
+   d) Recommence avec les 60 photos restantes › Commit changes.
+   e) Vérifie : index.html, .nojekyll, css, js et images sont au premier
+      niveau du dépôt, et le dossier images contient 120 fichiers (+ LISEZ.txt).
+
+
+2. ACTIVER LA PUBLICATION
+   Settings › Pages › Build and deployment
+   Source : « Deploy from a branch »
+   Branch : main  ›  dossier : / (root)  ›  Save.
+   Après 1 à 3 minutes, l’adresse du site s’affiche en haut de cette page
+   (ex. https://ton-pseudo.github.io/nom-du-depot/).
+
+
+3. VÉRIFIER EN LIGNE
+   - Accueil, menu, page Sport (3 reportages), un reportage : clic sur une
+     photo › la visionneuse s’ouvre, flèches et Échap fonctionnent.
+   - Bouton FR / EN en haut à droite.
+   - Prestations › « Demander un devis » › le type est présélectionné.
+   - Contact : envoie-toi un message › « Message envoyé. » s’affiche et
+     l’email arrive dans ta boîte (pense à regarder les spams la 1re fois).
+   - Ouvre aussi le site sur ton téléphone.
+
+
+4. TON NOM DE DOMAINE (plus tard)
+   Settings › Pages › Custom domain : saisis ton domaine (ex. raphaeldoucet.fr)
+   puis ajoute chez ton registraire les enregistrements DNS indiqués par GitHub.
+   Coche « Enforce HTTPS » dès que l’option apparaît (jusqu’à 24 h).
+
+
+METTRE À JOUR LE SITE
+   Renvoie seulement les fichiers modifiés (Add file › Upload files) : ceux qui
+   portent le même nom sont remplacés. La mise en ligne prend 1 à 3 minutes.
+   Si une ancienne version s’affiche encore : Cmd + Maj + R pour recharger.

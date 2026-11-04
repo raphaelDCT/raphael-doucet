@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pied de page</title>
+<meta name="description" content="Portfolio de Raphaël Doucet, photographe professionnel indépendant basé en Bretagne. Photographie sportive, événementielle, portrait, paysage et création de contenu.">
+<script src="./support.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/transitions.css">
+<script src="js/donnees-site.js"></script>
+<script src="js/traduction.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Geist:wght@300;400;500;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<footer class="foot">
+<span class="foot-id">Raphaël Doucet — Photographe · Vidéaste</span>
+<nav class="foot-links" aria-label="Pied de page">
+<a href="index.html">Accueil</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="projets.html">Projets</a>
+<a href="prestations.html">Prestations</a>
+<a href="video.html">Vidéo</a>
+<a href="a-propos.html">À propos</a>
+<a href="contact.html">Contact</a>
+</nav>
+<span class="foot-ig"><a href="{{ igHref }}" target="_blank" rel="noopener">Instagram @{{ ig }}</a></span>
+<span class="foot-legal">© {{ year }} Raphaël Doucet · Gourin, Bretagne, France — Toutes les photographies sont protégées par le droit d’auteur. Reproduction interdite sans autorisation.</span>
+</footer>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview": {"width": 1440, "height": 180}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const ig = ((window.RD || {}).site || {}).instagram || '_raphael_visual';
+    return { ig: ig, igHref: 'https://www.instagram.com/' + ig + '/', year: new Date().getFullYear() };
+  }
+}
+</script>
+</body>
+</html>

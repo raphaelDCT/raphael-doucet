@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Navigation</title>
+<meta name="description" content="Portfolio de Raphaël Doucet, photographe professionnel indépendant basé en Bretagne. Photographie sportive, événementielle, portrait, paysage et création de contenu.">
+<script src="./support.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/transitions.css">
+<script src="js/donnees-site.js"></script>
+<script src="js/traduction.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Geist:wght@300;400;500;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+/* Sélecteur de langue FR / EN */
+.nav-r{display:flex;align-items:center;gap:clamp(16px,2vw,32px)}
+.lang{display:inline-flex;align-items:center;font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em}
+.lang button{display:inline-flex;align-items:center;justify-content:center;min-width:34px;min-height:44px;padding:0 4px;margin:0;background:none;border:0;border-radius:0;color:inherit;opacity:.62;font:inherit;letter-spacing:inherit;cursor:pointer;transition:opacity .2s}
+.lang button:hover{opacity:1}
+.lang button.on{opacity:1;text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:1px}
+.lang button:focus-visible{outline:2px solid currentColor;outline-offset:-4px}
+.lang-sep{opacity:.4}
+</style>
+</helmet>
+<div>
+<header class="nav">
+<a class="brand" href="index.html">Raphaël Doucet</a>
+<div class="nav-r">
+<nav class="nav-links" aria-label="Navigation principale">
+<sc-for list="{{ items }}" as="n" hint-placeholder-count="7">
+<a class="{{ n.cls }}" href="{{ n.href }}" aria-current="{{ n.aria }}">{{ n.label }}</a>
+</sc-for>
+</nav>
+<div class="lang" role="group" aria-label="Langue · Language" data-no-i18n="">
+<button type="button" class="{{ frCls }}" aria-pressed="{{ frOn }}" lang="fr" title="Français" onClick="{{ setFr }}">FR</button>
+<span class="lang-sep" aria-hidden="true">/</span>
+<button type="button" class="{{ enCls }}" aria-pressed="{{ enOn }}" lang="en" title="English" onClick="{{ setEn }}">EN</button>
+</div>
+<button class="menu-btn" type="button" aria-label="Ouvrir le menu" onClick="{{ openMenu }}">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 9h18M3 15h18"></path></svg>
+</button>
+</div>
+</header>
+<sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+<div class="mm" role="dialog" aria-modal="true" aria-label="Menu">
+<div class="mm-top">
+<a class="brand" href="index.html">Raphaël Doucet</a>
+<button class="menu-btn" type="button" aria-label="Fermer le menu" onClick="{{ closeMenu }}" style="display: inline-flex"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
+</div>
+<nav class="mm-nav" aria-label="Navigation mobile">
+<sc-for list="{{ items }}" as="n" hint-placeholder-count="5">
+<a class="{{ n.cls }}" href="{{ n.href }}" aria-current="{{ n.aria }}" onClick="{{ closeMenu }}"><span class="mm-n">{{ n.num }}</span>{{ n.label }}</a>
+</sc-for>
+</nav>
+<p class="mm-foot"><a href="{{ igHref }}" target="_blank" rel="noopener">Instagram @{{ ig }}</a></p>
+</div>
+</sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"current": {"editor": "enum", "options": ["accueil", "portfolio", "projets", "prestations", "video", "apropos", "contact"], "default": "accueil"}, "$preview": {"width": 1440, "height": 64}}'>
+/* Navigation principale, commune à toutes les pages.
+   « current » = rubrique active (les pages catégories et reportages → portfolio). */
+const PAGES = [
+  ['accueil', 'Accueil', 'index.html'],
+  ['portfolio', 'Portfolio', 'portfolio.html'],
+  ['projets', 'Projets', 'projets.html'],
+  ['prestations', 'Prestations', 'prestations.html'],
+  ['video', 'Vidéo', 'video.html'],
+  ['apropos', 'À propos', 'a-propos.html'],
+  ['contact', 'Contact', 'contact.html']
+];
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { menu: false };
+    this._onLang = () => this.forceUpdate();
+  }
+  componentDidMount() { window.addEventListener('rd-lang', this._onLang); }
+  componentWillUnmount() { window.removeEventListener('rd-lang', this._onLang); }
+  renderVals() {
+    /* Langue : gérée par le script de traduction partagé (window.RDlang / RDsetLang) */
+    const lang = typeof window.RDlang === 'function' ? window.RDlang() : 'fr';
+    const setLang = (l) => { if (typeof window.RDsetLang === 'function') window.RDsetLang(l); this.forceUpdate(); };
+    const cur = this.props.current || 'accueil';
+    const ig = ((window.RD || {}).site || {}).instagram || '_raphael_visual';
+    return {
+      items: PAGES.map((p, i) => ({
+        label: p[1], href: p[2], num: String(i).padStart(2, '0'),
+        cls: p[0] === cur ? 'on' : '', aria: p[0] === cur ? 'page' : null
+      })),
+      ig: ig, igHref: 'https://www.instagram.com/' + ig + '/',
+      menuOpen: !!(this.state && this.state.menu),
+      openMenu: () => this.setState({ menu: true }),
+      closeMenu: () => this.setState({ menu: false }),
+      frCls: lang === 'fr' ? 'on' : '', enCls: lang === 'en' ? 'on' : '',
+      frOn: lang === 'fr' ? 'true' : 'false', enOn: lang === 'en' ? 'true' : 'false',
+      setFr: () => setLang('fr'), setEn: () => setLang('en')
+    };
+  }
+}
+</script>
+</body>
+</html>

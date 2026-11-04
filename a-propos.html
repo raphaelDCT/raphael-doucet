@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>À propos — Raphaël Doucet, photographe et vidéaste à Gourin, Bretagne</title>
+<meta name="description" content="Portfolio de Raphaël Doucet, photographe professionnel indépendant basé en Bretagne. Photographie sportive, événementielle, portrait, paysage et création de contenu.">
+<script src="./support.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/transitions.css">
+<script src="js/donnees-site.js"></script>
+<script src="js/traduction.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Geist:wght@300;400;500;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>body{margin:0}
+.about.solo{grid-template-columns:minmax(0,1fr)}
+.about.solo .about-text{max-width:760px}</style>
+</helmet>
+<div class="page">
+<div style="position: sticky; top: 0; z-index: 40">
+<dc-import name="SiteNav" current="apropos" hint-size="100%,64px"></dc-import>
+</div>
+<main class="page-main">
+<header class="phead">
+<div class="sec-head">
+<span class="sec-num">05</span>
+<h1 class="sec-title">À propos</h1>
+</div>
+</header>
+<div class="gal">
+<div class="{{ aboutCls }}">
+<sc-if value="{{ photo.hasFile }}" hint-placeholder-val="{{ false }}">
+<figure class="about-photo" onContextMenu="{{ guardMenu }}">
+<img src="{{ photo.fichier }}" alt="Portrait de Raphaël Doucet, photographe" loading="lazy" draggable="false">
+</figure>
+</sc-if>
+<div class="about-text">
+<p class="about-lead">Raphaël Doucet — Photographe et vidéaste indépendant</p>
+<p class="body">Basé à Gourin, en Bretagne, je photographie le sport, l’événementiel, le portrait, l’animalier et les paysages, et je réalise des films en vidéo, avec une approche centrée sur la lumière, le mouvement et les moments forts.</p>
+<p class="body">Mon approche privilégie des images naturelles et authentiques, avec une attention particulière portée aux atmosphères, aux émotions et aux territoires.</p>
+<p class="body">Déplacements partout en France, avec frais de déplacement.</p>
+</div>
+</div>
+
+<div class="skills">
+<h2 class="skills-h">Compétences</h2>
+<div class="skills-cols">
+<div>
+<h3>Photographie</h3>
+<ul>
+<li>Reportage</li>
+<li>Sport</li>
+<li>Événementiel</li>
+<li>Portrait</li>
+<li>Paysage</li>
+<li>Animalier</li>
+<li>Photographie documentaire</li>
+</ul>
+</div>
+<div>
+<h3>Vidéo</h3>
+<ul>
+<li>Prise de vue</li>
+<li>Plans stabilisés</li>
+<li>Drone</li>
+<li>Montage</li>
+<li>Étalonnage</li>
+<li>Création de contenu</li>
+</ul>
+</div>
+<div>
+<h3>Post-production</h3>
+<ul>
+<li>Adobe Lightroom</li>
+<li>Adobe Photoshop</li>
+<li>Adobe Premiere Pro</li>
+<li>Retouche photo</li>
+<li>Traitement RAW</li>
+<li>Montage vidéo</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="gear">
+<span class="gear-l">Équipement</span>
+<ul class="gear-list">
+<li>Sony A7 II</li>
+<li>Sony ZV-E10 II</li>
+<li>Sony 24-105mm f/4 G OSS</li>
+<li>Tamron 150-500mm</li>
+<li>DJI Air 3</li>
+<li>DJI RS 3 Mini</li>
+</ul>
+</div>
+</div>
+</main>
+<dc-import name="SiteFooter" hint-size="100%,180px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview": {"width": 1440, "height": 900}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const D = window.RD || { photos: [] };
+    const p = (D.photos || []).find((x) => x.categorie === 'apropos') || { id: 'portrait-raphael', ratio: '4/5' };
+    const parts = String(p.ratio || '4/5').split('/');
+    return {
+      photo: { id: p.id, fichier: p.fichier || '', hasFile: !!p.fichier, noFile: !p.fichier, ratioCss: (parts[0] || 4) + ' / ' + (parts[1] || 5) },
+      aboutCls: p.fichier ? 'about' : 'about solo',
+      guardMenu: (e) => { if (e && e.target && e.target.tagName === 'IMG') e.preventDefault(); }
+    };
+  }
+}
+</script>
+</body>
+</html>
