@@ -1,4 +1,4 @@
-POINTS RESTANT À RÉGLER — version finale du 3 novembre 2026
+POINTS RESTANT À RÉGLER — mise à jour du 16 novembre 2026
 ===========================================================
 
 VÉRIFICATIONS FAITES AVANT LIVRAISON
@@ -6,7 +6,7 @@ VÉRIFICATIONS FAITES AVANT LIVRAISON
 - 18 pages ouvertes : 0 lien interne cassé, 0 image cassée, 0 erreur JavaScript.
 - Affichage : 0 débordement sur téléphone (390 px), tablette (768 et 1024 px)
   et ordinateur (1440 px).
-- Visionneuse testée sur les 8 galeries (ouverture, image suivante, Échap).
+- Visionneuse testée sur les galeries (ouverture, image suivante, Échap).
 - Version anglaise : les 18 pages passent en anglais, aucun texte français
   repéré ; bouton FR / EN fonctionnel.
 - Formulaire contact / devis : clé Web3Forms présente, présélection depuis
@@ -36,7 +36,7 @@ RÉGLÉ
    lieu du cross et du match n’est pas connu. → À me donner si tu veux
    l’afficher.
 
-5. CONTENUS À COMPLÉTER : 6 reportages sur 7 n’ont pas de texte
+5. CONTENUS À COMPLÉTER : 6 reportages sur 8 n’ont pas de texte
    d’introduction, aucune photo n’a de légende, la page À propos n’a pas
    ton portrait.
 
@@ -56,6 +56,13 @@ LIMITES CONNUES (SIGNALÉES, NON MASQUÉES)
 
 9. MODE SOMBRE : l’interrupteur clair / sombre de l’ancien site n’a pas été
    repris, pour garder une identité visuelle unique.
+
+9b. CATÉGORIE ANIMALIER MASQUÉE (6 nov. 2026) : plus de page animalier.html, plus
+    de carte ni de lien. Les photos animalier-02, 03, 04 et 06 ne sont plus dans
+    le dossier publié (elles restent dans le canvas et dans ton
+    dossier Portfolio). La prestation
+    « Portrait animalier » reste sur la page Prestations avec sa photo
+    (animalier-01). Pour réafficher la catégorie : me le demander.
 
 10. CATÉGORIE BRETAGNE : sans photo pour l’instant, donc masquée et sa page
     n’est pas publiée. Le fichier de données garde une référence à

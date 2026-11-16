@@ -3,13 +3,17 @@ Site complet prêt pour GitHub Pages — version finale du 3 novembre 2026
 =====================================================================
 
 Ce dossier est le site complet et autonome. Il correspond à la dernière
-version du canvas « Portfolio — Raphaël Doucet » (version 59), qui comprend :
+version du canvas « Portfolio — Raphaël Doucet » (version 73), qui comprend :
 - la fusion des deux versions (ancien site + canvas) ;
 - le formulaire de contact et de devis relié à Web3Forms (clé ajoutée,
   envoi réel testé et reçu le 3 novembre 2026) ;
 - la page Sport rangée en 3 reportages datés (Merléac 2026, Cross-country
   2024, Guingamp Féminines 2024) ;
-- la page Portrait revenue à la version d’origine (reportage « En attendant »).
+- la page Portrait revenue à la version d’origine (reportage « En attendant ») ;
+- la catégorie Animalier masquée (6 novembre 2026) : plus de page ni de lien,
+  ses photos ne sont plus dans le dossier images (sauf celle de la prestation) ;
+- un nouveau reportage Sport : US Montagnarde, match de football (novembre 2026,
+  26 photos).
 
 Tout son contenu s’envoie tel quel à la racine du dépôt GitHub
 (voir PUBLIER_SUR_GITHUB_PAGES.txt).
@@ -19,14 +23,14 @@ ORGANISATION
 ------------
 index.html                 Accueil (première page ouverte)
 portfolio.html             Portfolio (catégories)
-projets.html               Projets : les 7 reportages et les séries photo
+projets.html               Projets : les 8 reportages et les séries photo
 prestations.html           Prestations : 9 prestations + déroulé + demande de devis
 video.html                 Vidéo
 a-propos.html              À propos
 contact.html               Contact et demande de devis (Web3Forms)
-sport.html, evenementiel.html, portrait.html, animalier.html
+sport.html, evenementiel.html, portrait.html
                            Pages des catégories du portfolio
-reportage-*.html           Les 7 reportages
+reportage-*.html           Les 8 reportages
 
 SiteNav.dc.html            Menu (commun à toutes les pages)
 SiteFooter.dc.html         Pied de page (commun à toutes les pages)
@@ -38,7 +42,7 @@ css/transitions.css        Transitions entre les pages
 js/donnees-site.js         Données du site : photos, catégories, reportages,
                            coordonnées. C’est ici qu’on ajoute une photo.
 js/traduction.js           Version anglaise (dictionnaire français → anglais)
-images/                    Les 119 photographies + la vignette de la vidéo
+images/                    Les 141 photographies publiées + la vignette de la vidéo
 .nojekyll                  Indique à GitHub de publier les fichiers tels quels
                            (fichier invisible sur Mac : Cmd + Maj + point)
 

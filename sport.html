@@ -15,7 +15,11 @@
 <x-dc>
 <helmet>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Geist:wght@300;400;500;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
-<style>body{margin:0}</style>
+<style>body{margin:0}
+/* Titre de reportage contenant un mot très long (ex. MONTAGNARDE) : taille réduite
+   pour qu’il tienne dans la colonne de la carte (sinon débordement horizontal). */
+@media (min-width:901px){.rcard-t.long{font-size:clamp(28px,3.1vw,52px)}}
+</style>
 </helmet>
 <div class="page">
 <div style="position: sticky; top: 0; z-index: 40">
@@ -41,7 +45,7 @@
 </span>
 <span class="rcard-i">
 <span class="rcard-k"><span class="{{ pr.kickerCls }}">{{ pr.surtitre }}</span></span>
-<span class="rcard-t"><span class="{{ pr.titreCls }}">{{ pr.titre }}</span></span>
+<span class="{{ pr.tCls }}"><span class="{{ pr.titreCls }}">{{ pr.titre }}</span></span>
 <sc-if value="{{ pr.hasSub }}" hint-placeholder-val="{{ true }}"><span class="rcard-s">{{ pr.sousTitre }}</span></sc-if>
 <span class="rcard-c">{{ pr.count }}</span>
 <span class="more">Voir le reportage <span aria-hidden="true">→</span></span>
@@ -81,7 +85,7 @@ class Component extends DCLogic {
       const cover = ph(pr.couverture || (list[0] && list[0].id) || pr.id);
       return Object.assign(cover, {
         id: cover.id, page: pr.page || 'portfolio.html',
-        titre: pr.titre || '[Nom du reportage]', titreCls: pr.titre ? '' : 'todo',
+        titre: pr.titre || '[Nom du reportage]', titreCls: pr.titre ? '' : 'todo', tCls: /\S{11,}/.test(pr.titre || '') ? 'rcard-t long' : 'rcard-t',
         surtitre: pr.surtitre || '[Type · lieu · date]', kickerCls: pr.surtitre ? '' : 'todo',
         sousTitre: pr.sousTitre || '', hasSub: !!pr.sousTitre,
         count: n(list.length)

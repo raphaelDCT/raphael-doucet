@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>US Montagnarde — Reportage football, novembre 2026 · Raphaël Doucet</title>
+<meta name="description" content="Portfolio de Raphaël Doucet, photographe professionnel indépendant basé en Bretagne. Photographie sportive, événementielle, portrait, paysage et création de contenu.">
+<script src="./support.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/transitions.css">
+<script src="js/donnees-site.js"></script>
+<script src="js/traduction.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Geist:wght@300;400;500;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>body{margin:0}
+@media (max-width:480px){.project-title{font-size:clamp(32px,10.5vw,56px);overflow-wrap:break-word;hyphens:auto}}</style>
+</helmet>
+<div class="page">
+<div style="position: sticky; top: 0; z-index: 40">
+<dc-import name="SiteNav" current="portfolio" hint-size="100%,64px"></dc-import>
+</div>
+<main class="page-main">
+<nav class="crumb" aria-label="Fil d’Ariane"><a href="portfolio.html">Portfolio</a><span class="crumb-sep" aria-hidden="true">/</span><a href="sport.html">Sport</a><span class="crumb-sep" aria-hidden="true">/</span><span aria-current="page">{{ pr.titre }}</span></nav>
+<header class="phead after-crumb">
+<div class="project-head" style="margin: 0">
+<div class="project-id">
+<p class="eyebrow"><span class="{{ pr.kickerCls }}">{{ pr.surtitre }}</span></p>
+<h1 class="project-title" style="font-size: clamp(56px, 7.4vw, 120px)"><span class="{{ pr.titreCls }}">{{ pr.titre }}</span></h1>
+<sc-if value="{{ pr.hasSub }}" hint-placeholder-val="{{ true }}"><p class="project-sub">{{ pr.sousTitre }}</p></sc-if>
+</div>
+<div class="project-body">
+<sc-if value="{{ pr.hasText }}" hint-placeholder-val="{{ false }}"><p class="project-text">{{ pr.texte }}</p></sc-if>
+<span class="project-count">{{ pr.count }}</span>
+</div>
+</div>
+</header>
+<div class="gal">
+<dc-import name="Gallery" source="projet:us-montagnarde-2026" layout="immersive" group="" hint-size="100%,1600px"></dc-import>
+</div>
+<nav class="catnav" aria-label="Poursuivre la visite">
+<a href="sport.html"><span class="catnav-k">← Retour à</span><span class="catnav-t">Sport</span></a>
+<a href="evenementiel.html"><span class="catnav-k">Catégorie suivante →</span><span class="catnav-t">Événementiel</span></a>
+</nav>
+</main>
+<dc-import name="SiteFooter" hint-size="100%,180px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview": {"width": 1440, "height": 900}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const D = window.RD || { photos: [], projets: [] };
+    const pr = (D.projets || []).find((x) => x.id === 'us-montagnarde-2026') || { id: 'us-montagnarde-2026' };
+    const n = (D.photos || []).filter((p) => p.projet === pr.id).length;
+    return {
+      pr: {
+        titre: pr.titre || '[Nom du reportage]', titreCls: pr.titre ? '' : 'todo',
+        surtitre: pr.surtitre || '[Type · lieu · date]', kickerCls: pr.surtitre ? '' : 'todo',
+        texte: pr.texte || '', hasText: !!pr.texte,
+        sousTitre: pr.sousTitre || '', hasSub: !!pr.sousTitre,
+        couverture: pr.couverture || '', hasCover: !!pr.couverture,
+        count: n + ' image' + (n > 1 ? 's' : '')
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>

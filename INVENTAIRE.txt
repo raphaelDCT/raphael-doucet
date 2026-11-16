@@ -1,18 +1,18 @@
 INVENTAIRE DU SITE — RAPHAËL DOUCET, PHOTOGRAPHE ET VIDÉASTE
-Version finale du 3 novembre 2026 (canvas version 59)
+Version du 16 novembre 2026 (canvas version 73)
 
 RÉSUMÉ
-  Fichiers au total ........ 151  (dont ce fichier INVENTAIRE.txt)
-  Poids total .............. 46.4 Mo  (photos : 45.9 Mo)
+  Fichiers au total ........ 175  (dont ce fichier INVENTAIRE.txt)
+  Poids total .............. 62.8 Mo  (photos : 62.3 Mo)
   Pages HTML ............... 18
   Composants partagés ...... 3  (SiteNav, SiteFooter, Gallery — fichiers .dc.html)
   Feuilles de style ........ 2  (css/style.css, css/transitions.css)
   Scripts .................. 3  (support.js, js/donnees-site.js, js/traduction.js)
-  Photographies ............ 119  (dossier images/)
+  Photographies ............ 143  (dossier images/)
   Vignette vidéo ........... 1  (images/video-penmarch-miniature.jpg)
-  Fichiers dans images/ .... 120
+  Fichiers dans images/ .... 144
   Vidéo .................... 1  hébergée sur YouTube (PENMARC’H — Entre terre et mer)
-  Reportages ............... 7
+  Reportages ............... 8
   Documents ................ 4  (LISEZMOI, INVENTAIRE, PROBLEMES_A_RESOUDRE, PUBLIER_SUR_GITHUB_PAGES)
   Fichier technique ........ 1  (.nojekyll, invisible sur Mac)
   Polices / logos .......... 0 fichier (Google Fonts ; logo typographique)
@@ -20,19 +20,20 @@ RÉSUMÉ
 PHOTOGRAPHIES PAR REPORTAGE ET GALERIE
   Image d’accueil : 1
   Reportage MERLÉAC 2026 (sport) : 16
+  Reportage US MONTAGNARDE (sport) : 26
   Reportage FESTIVAL DE CORNOUAILLE (evenementiel) : 14
   Reportage FÊTE SAINTE-JULIENNE (evenementiel) : 17
   Reportage COURSES DE TRACTEUR TONDEUSE (evenementiel) : 15
   Reportage EN ATTENDANT (portrait) : 15
   Archives (non affichées en Portrait) — Couple / Grossesse : 6
-  Galerie Animalier — Animaux domestiques : 5
+  Galerie Animalier-masque — Animaux domestiques : 2
+  Galerie Prestations : 1
   Reportage GUINGAMP FÉMININES 2024 (sport) : 16
   Reportage CROSS-COUNTRY 2024 (sport) : 14
-  TOTAL : 119
+  TOTAL : 143
 
 PAGES
   a-propos.html
-  animalier.html
   contact.html
   evenementiel.html
   index.html
@@ -47,75 +48,73 @@ PAGES
   reportage-guingamp-feminines-2024.html
   reportage-merleac-2026.html
   reportage-tondeuse-glomel-2024.html
+  reportage-us-montagnarde-2026.html
   sport.html
   video.html
 
 LISTE DÉTAILLÉE DES FICHIERS (taille en octets, empreinte SHA-256 abrégée)
   .nojekyll                                                    0  e3b0c44298fc1c14
   a-propos.html                                             3970  1528500510dda7b9
-  animalier.html                                            2438  855b465e955c9011
   contact.html                                             15771  30fc43163932742b
   css/style.css                                            28800  4458a3e19ea9b031
   css/transitions.css                                       1819  719600b08d989b57
   evenementiel.html                                         5177  0302aa59541ea51e
   Gallery.dc.html                                          14275  c8ddc460dab159a7
-  index.html                                               19152  75dea140969999e3
-  js/donnees-site.js                                       35942  a379af71302ea4db
-  js/traduction.js                                         45141  e9992e08d5589b91
-  LISEZMOI.txt                                              3271  5783d026473c5674
+  index.html                                               19155  9463d6c5161e8ac5
+  js/donnees-site.js                                       43863  3e32e4fa17b21657
+  js/traduction.js                                         48907  f6d492fd188c24cd
+  LISEZMOI.txt                                              3522  464f8d4032f6edda
   portfolio.html                                            3918  af916603810fb096
-  portrait.html                                             5080  f8addc3ac3f91280
-  prestations.html                                         15232  b47053942ba314a3
-  PROBLEMES_A_RESOUDRE.txt                                  3896  f23495543ec88fc2
-  projets.html                                              6220  805c792cbe7187c2
-  PUBLIER_SUR_GITHUB_PAGES.txt                              3462  64f5f16bfbb7cba1
+  portrait.html                                             5072  44bfc790dfe71726
+  prestations.html                                         15300  8a5b58fb0333ce50
+  PROBLEMES_A_RESOUDRE.txt                                  4304  6393247dda22ae0f
+  projets.html                                              6540  fa1726fdc41fb469
+  PUBLIER_SUR_GITHUB_PAGES.txt                              3470  595e67d273e0f98f
   reportage-cross-country-2024.html                         3536  340fec9cb770ff8d
-  reportage-en-attendant.html                               3508  c53ad92482e837f2
+  reportage-en-attendant.html                               3500  5b9c2423579a57c9
   reportage-festival-cornouaille.html                       3551  2889951a46310530
   reportage-fete-sainte-julienne.html                       3555  3f2185422e4c4d5e
   reportage-guingamp-feminines-2024.html                    3550  78a40f62a788c306
   reportage-merleac-2026.html                               3526  2c4c970858b56ea8
   reportage-tondeuse-glomel-2024.html                       3584  0fb8512046e1d4b9
+  reportage-us-montagnarde-2026.html                        3543  7c78bca10960d42b
   SiteFooter.dc.html                                        1945  76f6ffe303dadfe5
   SiteNav.dc.html                                           5664  4ce9ea11e7a8db85
-  sport.html                                                4877  42b0bb2efbdbf6ca
+  sport.html                                                5198  a877b3e0e12289b0
   support.js                                              188749  b795ee21261f2e7d
   video.html                                               18137  29c9358c24c4e998
-  images/accueil-01.jpg                                   307775  ea767445cdb898fd
+  images/accueil-01.jpg                                   313546  aa625386bca18a93
   images/animalier-01.jpg                                 148107  2d8ac7cde35e69f1
-  images/animalier-02.jpg                                 165358  ff835ad004e02dff
-  images/animalier-03.jpg                                 194495  556286c84d50cc6a
-  images/animalier-04.jpg                                 199558  985017bfcfbb4b4f
-  images/animalier-06.jpg                                 220200  ddd877957934c519
-  images/cornouaille-01.jpg                               491492  8b6a35a0e02610fa
-  images/cornouaille-02.jpg                               382110  7d8b757ce1f30758
-  images/cornouaille-03.jpg                               392147  4d8c9e8613957d5f
-  images/cornouaille-04.jpg                               409481  e338e0691ce1138f
-  images/cornouaille-05.jpg                               283239  92509f2a50243902
-  images/cornouaille-06.jpg                               498449  215d294c7e642b83
-  images/cornouaille-07.jpg                               374928  dac13951b9c98a17
-  images/cornouaille-08.jpg                               309467  9e0ca6be56f898ef
-  images/cornouaille-09.jpg                               447628  c7223b7ff03e764b
-  images/cornouaille-10.jpg                               302361  202b0ccbcdab1c39
-  images/cornouaille-11.jpg                               245313  a8644e7867090e5f
-  images/cornouaille-12.jpg                               456465  e6acff5d5484c512
-  images/cornouaille-13.jpg                               595900  fdc4e63803f7c670
-  images/cornouaille-14.jpg                               380610  b2415ca58d98749b
-  images/en-attendant-01.jpg                              609480  a60f53b0d8f3f2aa
-  images/en-attendant-02.jpg                              603720  baa79ac103b14e42
-  images/en-attendant-03.jpg                              344903  6fc119837230e547
-  images/en-attendant-04.jpg                              356460  72727633cad6115e
-  images/en-attendant-05.jpg                              274691  dfd80c977ad68cc5
-  images/en-attendant-06.jpg                              453548  9ea6529b0403c5d9
-  images/en-attendant-07.jpg                              200526  166eccfc0635c119
-  images/en-attendant-08.jpg                              122989  f2c612f55b823cb0
-  images/en-attendant-09.jpg                              410422  0f39bb3f41b91175
-  images/en-attendant-10.jpg                              352642  a985cbb30fbb1601
-  images/en-attendant-11.jpg                              538630  ee9ac2c93478073a
-  images/en-attendant-12.jpg                              430736  3310a5cea26f8b98
-  images/en-attendant-13.jpg                              161489  a62fea6e9b4495d2
-  images/en-attendant-14.jpg                              148091  8525c28a90cd0da6
-  images/en-attendant-15.jpg                              363262  bdca0ba8d06f161e
+  images/animalier-09.jpg                                 362712  d6edc106d94fbfc1
+  images/cornouaille-01.jpg                               497263  415b0f4d0db9f87b
+  images/cornouaille-02.jpg                               387881  930f90ffdc22d799
+  images/cornouaille-03.jpg                               397918  9b21607e653da18a
+  images/cornouaille-04.jpg                               415252  009571aca204f25d
+  images/cornouaille-05.jpg                               289010  fa9a8a797f44b4a0
+  images/cornouaille-06.jpg                               504220  7905202508eb917c
+  images/cornouaille-07.jpg                               380699  edc3a3aca97aefa8
+  images/cornouaille-08.jpg                               315238  c8330c73ee7e6158
+  images/cornouaille-09.jpg                               453399  be6908ca1e5a3b4e
+  images/cornouaille-10.jpg                               308132  4b5420c55d290580
+  images/cornouaille-11.jpg                               251084  abdc01327aff5d3d
+  images/cornouaille-12.jpg                               462236  3d9e859b1fc2892b
+  images/cornouaille-13.jpg                               601671  51cb79bacc8baa1f
+  images/cornouaille-14.jpg                               386381  1f08d3de08eac165
+  images/en-attendant-01.jpg                              615251  1bc269634f827b64
+  images/en-attendant-02.jpg                              609491  b2a6a702a48d623d
+  images/en-attendant-03.jpg                              350674  92655cbb4639e514
+  images/en-attendant-04.jpg                              362231  4e38d376dd53c556
+  images/en-attendant-05.jpg                              280462  724edcf3a1623ec7
+  images/en-attendant-06.jpg                              459319  9ed45cdce670052c
+  images/en-attendant-07.jpg                              206297  4e0823355c84b1cc
+  images/en-attendant-08.jpg                              128760  b0acce961cb6de41
+  images/en-attendant-09.jpg                              416193  d13572f679fa0287
+  images/en-attendant-10.jpg                              358413  95bbfbee19c8a707
+  images/en-attendant-11.jpg                              544401  9be7f8ea46054a00
+  images/en-attendant-12.jpg                              436507  8fbe4d5f17c3a2f3
+  images/en-attendant-13.jpg                              167260  a6865badc21dda5e
+  images/en-attendant-14.jpg                              153862  6809db1e17745eba
+  images/en-attendant-15.jpg                              369033  4f1364b0b3e63f06
   images/guingamp-match-01.jpg                            363374  7bfb02b7c9d70995
   images/guingamp-match-02.jpg                            232807  44622b8937602b48
   images/guingamp-match-03.jpg                            346013  f6ad318e7791fa2a
@@ -132,45 +131,46 @@ LISTE DÉTAILLÉE DES FICHIERS (taille en octets, empreinte SHA-256 abrégée)
   images/guingamp-match-14.jpg                            233133  8705e1e0a4779d7f
   images/guingamp-match-15.jpg                            404899  7ed964d513fa292c
   images/guingamp-match-16.jpg                            152433  087d77104c18a5a1
-  images/merleac-01.jpg                                   331993  389df361e80185dc
-  images/merleac-02.jpg                                   333445  5b883bc3f528e9df
-  images/merleac-03.jpg                                   438024  45438b5d20e80d0b
-  images/merleac-04.jpg                                   353648  73d086571fdc390e
-  images/merleac-05.jpg                                   430368  c02611046f65b1ce
-  images/merleac-06.jpg                                   246260  1336c43f636a5d4a
-  images/merleac-07.jpg                                   545807  03cbb330c2b035c9
-  images/merleac-08.jpg                                   452097  ebb497ab0c154ae7
-  images/merleac-09.jpg                                   497129  d8e24a6f53e8b51c
-  images/merleac-10.jpg                                   511383  faf4da94b772ae46
-  images/merleac-11.jpg                                   464152  67f6111d1532fb52
-  images/merleac-12.jpg                                   642832  05ccddd54e3341cc
-  images/merleac-13.jpg                                   486802  53c8f3c9c32d8250
-  images/merleac-14.jpg                                   405424  e9b70234cff38de8
-  images/merleac-15.jpg                                   302323  905ea50b3cf34865
-  images/merleac-16.jpg                                   316138  a912fb7d2febf071
+  images/merleac-01.jpg                                   337764  f7f699ac50857f37
+  images/merleac-02.jpg                                   339216  e62f9dc83af1f70d
+  images/merleac-03.jpg                                   443795  a62d3d4f48c7c716
+  images/merleac-04.jpg                                   359419  bce936bd2349508b
+  images/merleac-05.jpg                                   436139  96471950a1caf9c1
+  images/merleac-06.jpg                                   252031  d57de610c6a00439
+  images/merleac-07.jpg                                   551578  96db58a1d13c2c2b
+  images/merleac-08.jpg                                   457868  6bae698bc09a047f
+  images/merleac-09.jpg                                   502900  7c2fb8a4ba73af18
+  images/merleac-10.jpg                                   517154  2a11e294af3d85e1
+  images/merleac-11.jpg                                   469923  9f362d22426dff06
+  images/merleac-12.jpg                                   648603  1775fe1aae5672ac
+  images/merleac-13.jpg                                   492573  e7795877c5699740
+  images/merleac-14.jpg                                   411195  9aeb58da23de6c7a
+  images/merleac-15.jpg                                   308094  a423afeaa04c75f0
+  images/merleac-16.jpg                                   321909  a99f6e1242392448
+  images/paysage-01.jpg                                  1163816  9f5afc23e26ff402
   images/portrait-01.jpg                                  190222  84ad39021d91ce1c
   images/portrait-02.jpg                                  147077  66db0e7ad91ce4b5
   images/portrait-03.jpg                                  108793  f386ade5fc83b617
   images/portrait-04.jpg                                  381547  cf221489b1e9340c
   images/portrait-05.jpg                                  183534  dec8130bb4484ae2
   images/portrait-06.jpg                                  366343  c1888d442673168a
-  images/sainte-julienne-01.jpg                           869437  efbbd4b9e680ae6a
-  images/sainte-julienne-02.jpg                           322781  fe325179c95d2492
-  images/sainte-julienne-03.jpg                           469695  5dcb6426a73064b2
-  images/sainte-julienne-04.jpg                           776908  abb04ec5c01de74f
-  images/sainte-julienne-05.jpg                           925460  71ee1fb5a90a16d4
-  images/sainte-julienne-06.jpg                           511075  8242f436e316cf1d
-  images/sainte-julienne-07.jpg                           395683  31af0f752add0932
-  images/sainte-julienne-08.jpg                           727345  d7964a19a794ced6
-  images/sainte-julienne-09.jpg                           422475  e1690f338a7b21f9
-  images/sainte-julienne-10.jpg                           322398  c1792f810e14ffc0
-  images/sainte-julienne-11.jpg                           410994  d1bb12706968e3bc
-  images/sainte-julienne-12.jpg                           373227  3686b3e36e82313b
-  images/sainte-julienne-13.jpg                           534576  67143c9a608c1ce0
-  images/sainte-julienne-14.jpg                           439066  4de911a5243cd6d4
-  images/sainte-julienne-16.jpg                           529356  977b2279ab32b23b
-  images/sainte-julienne-17.jpg                           522483  88833108bc758645
-  images/sainte-julienne-18.jpg                           301326  48e007dff29f1215
+  images/sainte-julienne-01.jpg                           875208  9dbd6f7a8132cfff
+  images/sainte-julienne-02.jpg                           328552  a328a52707e59da3
+  images/sainte-julienne-03.jpg                           475466  645389bf2eaa3f58
+  images/sainte-julienne-04.jpg                           782679  ddb4e36ab3bb5734
+  images/sainte-julienne-05.jpg                           931231  c4b95fc9fb35f70f
+  images/sainte-julienne-06.jpg                           516846  578aadd672df1221
+  images/sainte-julienne-07.jpg                           401454  bd91138ebe0e91f4
+  images/sainte-julienne-08.jpg                           733116  43946b95534e4890
+  images/sainte-julienne-09.jpg                           428246  984ea5867c62fdbd
+  images/sainte-julienne-10.jpg                           328169  d2ed0235424629e2
+  images/sainte-julienne-11.jpg                           416765  910a5dc833de6d9f
+  images/sainte-julienne-12.jpg                           378998  c85710a77c6b3dc3
+  images/sainte-julienne-13.jpg                           540347  543299663cfe63be
+  images/sainte-julienne-14.jpg                           444837  81945df9c4d2f28a
+  images/sainte-julienne-16.jpg                           535127  841dd35e8b1489c7
+  images/sainte-julienne-17.jpg                           528254  c5690ad07ae49194
+  images/sainte-julienne-18.jpg                           307097  d79fe17dacaadfe4
   images/sport-12.jpg                                     161911  2bcf16b7deb52d2a
   images/sport-13.jpg                                     222772  818de082f56fea4c
   images/sport-14.jpg                                     154275  bbe74d38f301848b
@@ -185,19 +185,45 @@ LISTE DÉTAILLÉE DES FICHIERS (taille en octets, empreinte SHA-256 abrégée)
   images/sport-23.jpg                                     258678  86b281b0d121c8ab
   images/sport-24.jpg                                     490854  87a2192bbe27f6bd
   images/sport-25.jpg                                     617171  5373a489e345052f
-  images/tondeuse-glomel-01.jpg                           551039  092a81ef8b44abb1
-  images/tondeuse-glomel-02.jpg                           929640  0187ebf80d3bbe3d
-  images/tondeuse-glomel-03.jpg                           651718  dcc5ac9ca7a06098
-  images/tondeuse-glomel-04.jpg                           356048  1e9c611effb73871
-  images/tondeuse-glomel-05.jpg                           316845  0f4d45375c448bd2
-  images/tondeuse-glomel-06.jpg                           498156  ea08c6c2e1c360a8
-  images/tondeuse-glomel-07.jpg                           581867  030f7028a6835046
-  images/tondeuse-glomel-08.jpg                           388882  685db0c4747fbae4
-  images/tondeuse-glomel-09.jpg                           468528  7b1514f29edaa47d
-  images/tondeuse-glomel-10.jpg                           460065  55e9d0d90e088e72
-  images/tondeuse-glomel-11.jpg                           488935  221976b68243fac7
-  images/tondeuse-glomel-12.jpg                           489347  5d255a33ac881473
-  images/tondeuse-glomel-13.jpg                           515644  3a9f88942c1ae6a1
-  images/tondeuse-glomel-14.jpg                           532823  2e1f8d73a7756312
-  images/tondeuse-glomel-15.jpg                           564285  b2f26139d745ed1c
-  images/video-penmarch-miniature.jpg                     198313  5ee53c956105f41f
+  images/tondeuse-glomel-01.jpg                           556810  d650fb76f78e3ab6
+  images/tondeuse-glomel-02.jpg                           935411  90c21d978a90fc0e
+  images/tondeuse-glomel-03.jpg                           657489  08578fb725bf564a
+  images/tondeuse-glomel-04.jpg                           361819  4878e00fc68c667a
+  images/tondeuse-glomel-05.jpg                           322616  e7f8eca4f67620da
+  images/tondeuse-glomel-06.jpg                           503927  4a4bbafe0ef2465a
+  images/tondeuse-glomel-07.jpg                           587638  65b1ad313112d417
+  images/tondeuse-glomel-08.jpg                           394653  9e328442a2491829
+  images/tondeuse-glomel-09.jpg                           474299  518b93e29ba063fb
+  images/tondeuse-glomel-10.jpg                           465836  3b64a425b170b4a2
+  images/tondeuse-glomel-11.jpg                           494706  56feccc6ebb9271a
+  images/tondeuse-glomel-12.jpg                           495118  6769523ce301c48d
+  images/tondeuse-glomel-13.jpg                           521415  f23bcaa169ab4fab
+  images/tondeuse-glomel-14.jpg                           538594  226371aeccd7fc9f
+  images/tondeuse-glomel-15.jpg                           570056  b03966c410165bb5
+  images/us-montagnarde-01.jpg                            301996  6df1a9f7b06ee307
+  images/us-montagnarde-02.jpg                            756494  4f39525348b20e3b
+  images/us-montagnarde-03.jpg                            484583  5587f6bea15a3ffb
+  images/us-montagnarde-04.jpg                            719346  4956b2f678b0ad3f
+  images/us-montagnarde-05.jpg                            803656  3fe47c59f37ef95d
+  images/us-montagnarde-06.jpg                            359584  61c1b145910d81a6
+  images/us-montagnarde-07.jpg                            522653  96cafdcb48b1c9ab
+  images/us-montagnarde-08.jpg                            206304  1e793b667b928db7
+  images/us-montagnarde-09.jpg                            740330  92601d23aed5cc88
+  images/us-montagnarde-10.jpg                            515470  71e69f46f53ed25f
+  images/us-montagnarde-11.jpg                            915041  7b11fdf19427fd36
+  images/us-montagnarde-12.jpg                            458698  5c2f085418bbb53f
+  images/us-montagnarde-13.jpg                            991214  b6f2e6b289a1f497
+  images/us-montagnarde-14.jpg                            218668  37a1dce834a20ea3
+  images/us-montagnarde-15.jpg                            440479  efd8302ed9d8bedb
+  images/us-montagnarde-16.jpg                            751076  7ba74db07d92f8ec
+  images/us-montagnarde-17.jpg                            664144  eb68779b161bc513
+  images/us-montagnarde-18.jpg                            993119  98a01e8c1319de94
+  images/us-montagnarde-19.jpg                            715105  982bd8d9bd0e092c
+  images/us-montagnarde-20.jpg                            335877  f5c648ed002c5eeb
+  images/us-montagnarde-21.jpg                            370030  7ac8c61a32fa299b
+  images/us-montagnarde-22.jpg                            404248  b7e2abd1e0f1f8ec
+  images/us-montagnarde-23.jpg                            672447  430a07a1bd71d360
+  images/us-montagnarde-24.jpg                            782717  628e4a7236a2813f
+  images/us-montagnarde-25.jpg                            549071  7407065e1e0016fa
+  images/us-montagnarde-26.jpg                            560758  13e4fe76c1c5f331
+  images/video-penmarch-miniature.jpg                     204084  d692292cad7720cf

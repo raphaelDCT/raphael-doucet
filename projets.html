@@ -16,6 +16,9 @@
 <helmet>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Geist:wght@300;400;500;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
 <style>
+/* Titre de reportage contenant un mot très long (ex. MONTAGNARDE) : taille réduite
+   pour qu’il tienne dans la colonne de la carte (sinon débordement horizontal). */
+@media (min-width:901px){.rcard-t.long{font-size:clamp(28px,3.1vw,52px)}}
 body{margin:0}
 .pj-sub{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;margin:clamp(72px,8vw,120px) 0 clamp(28px,3vw,40px);padding-bottom:20px;border-bottom:1px solid #151514}
 .pj-sub-t{margin:0;font-family:'Instrument Serif','Times New Roman',Georgia,serif;font-weight:400;font-size:clamp(36px,3.8vw,56px);line-height:1}
@@ -54,7 +57,7 @@ body{margin:0}
 </span>
 <span class="rcard-i">
 <span class="rcard-k">{{ pr.surtitre }}</span>
-<span class="rcard-t">{{ pr.titre }}</span>
+<span class="{{ pr.tCls }}">{{ pr.titre }}</span>
 <sc-if value="{{ pr.hasSub }}" hint-placeholder-val="{{ true }}"><span class="rcard-s">{{ pr.sousTitre }}</span></sc-if>
 <span class="rcard-c">{{ pr.count }}</span>
 <span class="more">Voir le reportage <span aria-hidden="true">→</span></span>
@@ -97,7 +100,7 @@ class Component extends DCLogic {
       const list = real.filter((p) => p.projet === pr.id);
       const cover = byId[pr.couverture] || list[0];
       return {
-        page: pr.page, fichier: cover.fichier, titre: pr.titre, surtitre: pr.surtitre || '',
+        page: pr.page, fichier: cover.fichier, titre: pr.titre, tCls: /\S{11,}/.test(pr.titre || '') ? 'rcard-t long' : 'rcard-t', surtitre: pr.surtitre || '',
         sousTitre: pr.sousTitre || '', hasSub: !!pr.sousTitre, count: n(list.length)
       };
     });

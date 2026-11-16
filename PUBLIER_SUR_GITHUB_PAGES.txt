@@ -22,7 +22,7 @@ AVANT DE COMMENCER
    d) Dans GitHub Desktop : écris « Site Raphaël Doucet » › Commit to main ›
       Push origin.
 
-   MÉTHODE NAVIGATEUR (limite : 100 fichiers par envoi ; images = 120 fichiers)
+   MÉTHODE NAVIGATEUR (limite : 100 fichiers par envoi ; images = 142 fichiers)
    a) Dans ton dépôt : Add file › Upload files. Sélectionne tout le contenu
       de ce dossier SAUF le dossier « images » : fichiers .html, les 3 fichiers
       .dc.html, support.js, .nojekyll, les dossiers css et js, les fichiers
@@ -30,11 +30,11 @@ AVANT DE COMMENCER
    b) Crée le dossier images : Add file › Create new file › tape
       images/LISEZ.txt , écris « photos du site » › Commit changes.
    c) Ouvre le dossier images dans GitHub › Add file › Upload files.
-      Glisse les 60 premières photos (de accueil-01 à merleac-09, Finder trié
+      Glisse les 71 premières photos (de accueil-01 à sainte-julienne-02, Finder trié
       par nom) › Commit changes.
-   d) Recommence avec les 60 photos restantes › Commit changes.
+   d) Recommence avec les 71 photos restantes › Commit changes.
    e) Vérifie : index.html, .nojekyll, css, js et images sont au premier
-      niveau du dépôt, et le dossier images contient 120 fichiers (+ LISEZ.txt).
+      niveau du dépôt, et le dossier images contient 142 fichiers (+ LISEZ.txt).
 
 
 2. ACTIVER LA PUBLICATION

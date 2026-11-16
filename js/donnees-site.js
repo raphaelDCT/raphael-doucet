@@ -24,12 +24,14 @@ window.RD = {
      couverture = id de la photo qui représente la catégorie. */
   /* Photos « archives » (ancien site, couple / grossesse) : conservées mais
      retirées de la page Portrait à la demande de Raphaël (3 nov. 2026). */
+  /* Catégorie Animalier MASQUÉE à la demande de Raphaël (6 nov. 2026) : ses photos
+     sont classées « animalier-masque ». Remettre « animalier » pour la réafficher. */
   categories: [
     { id: 'sport',        titre: 'Sport',        description: 'Photographie sportive et action.',          page: 'sport.html',        couverture: 'merleac-06' },
     { id: 'evenementiel', titre: 'Événementiel', description: 'Reportages et événements.',                 page: 'evenementiel.html', couverture: 'cornouaille-03' },
     { id: 'portrait',     titre: 'Portrait',     description: 'Portraits et photographie humaine.',        page: 'portrait.html',     couverture: 'portrait-01' },
     { id: 'bretagne',     titre: 'Bretagne',     description: 'Paysages, patrimoine et littoral breton.',  page: 'Bretagne.dc.html',     couverture: 'bretagne-01' },
-    { id: 'animalier',    titre: 'Animalier',    description: 'Photographie animalière.',                  page: 'animalier.html',    couverture: 'animalier-01' }
+    { id: 'animalier',    titre: 'Animalier',    description: 'Photographie animalière.',                  page: 'Animalier.dc.html',    couverture: 'animalier-01' }
   ],
 
   /* ---------- Reportages (pages Sport et Événementiel) ----------
@@ -38,6 +40,16 @@ window.RD = {
      donner cet id aux photos concernées (champ « projet »)
      — la page du reportage est créée dans le canvas. */
   projets: [
+    {
+      id: 'us-montagnarde-2026',
+      page: 'reportage-us-montagnarde-2026.html',
+      categorie: 'sport',
+      surtitre: 'Reportage · Novembre 2026',
+      titre: 'US MONTAGNARDE',
+      sousTitre: 'Match de football',
+      texte: 'Reportage photographique réalisé lors d’une rencontre de football de l’US Montagnarde, mettant en lumière les joueurs, les actions et les temps forts du match.',
+      couverture: 'us-montagnarde-02'
+    },
     {
       id: 'merleac-2026',
       page: 'reportage-merleac-2026.html',
@@ -148,6 +160,32 @@ window.RD = {
     { id: 'merleac-14', fichier: 'images/merleac-14.jpg', titre: '', lieu: 'Merléac', date: 'Septembre 2026', categorie: 'sport', projet: 'merleac-2026', ratio: '2048/1024' },
     { id: 'merleac-15', fichier: 'images/merleac-15.jpg', titre: '', lieu: 'Merléac', date: 'Septembre 2026', categorie: 'sport', projet: 'merleac-2026', ratio: '2048/1365' },
     { id: 'merleac-16', fichier: 'images/merleac-16.jpg', titre: '', lieu: 'Merléac', date: 'Septembre 2026', categorie: 'sport', projet: 'merleac-2026', format: 'plein', ratio: '2048/1151' },
+    { id: 'us-montagnarde-02', fichier: 'images/us-montagnarde-02.jpg', titre: '', lieu: '', date: 'Novembre 2026', categorie: 'sport', projet: 'us-montagnarde-2026', alt: 'Les deux équipes se saluent avant le coup d\'envoi', format: 'plein', ratio: '2048/1024' },
+    { id: 'us-montagnarde-01', fichier: 'images/us-montagnarde-01.jpg', titre: '', lieu: '', date: 'Novembre 2026', categorie: 'sport', projet: 'us-montagnarde-2026', alt: 'Joueur de l\'US Montagnarde à l\'échauffement, mains sur le visage', ratio: '1151/2048' },
+    { id: 'us-montagnarde-03', fichier: 'images/us-montagnarde-03.jpg', titre: '', lieu: '', date: 'Novembre 2026', categorie: 'sport', projet: 'us-montagnarde-2026', alt: 'Joueur de l\'US Montagnarde souriant vers l\'objectif avant le match', ratio: '1151/2048' },
+    { id: 'us-montagnarde-05', fichier: 'images/us-montagnarde-05.jpg', titre: '', lieu: '', date: 'Novembre 2026', categorie: 'sport', projet: 'us-montagnarde-2026', alt: 'Joueurs de l\'US Montagnarde devant le banc de touche', ratio: '2048/1152' },
+    { id: 'us-montagnarde-06', fichier: 'images/us-montagnarde-06.jpg', titre: '', lieu: '', date: 'Novembre 2026', categorie: 'sport', projet: 'us-montagnarde-2026', alt: 'Joueur de l\'US Montagnarde face à un adversaire devant le but', ratio: '2048/1152' },
+    { id: 'us-montagnarde-19', fichier: 'images/us-montagnarde-19.jpg', titre: '', lieu: '', date: 'Novembre 2026', categorie: 'sport', projet: 'us-montagnarde-2026', alt: 'Vue d\'ensemble du terrain pendant une phase de jeu', format: 'plein', ratio: '2048/1152' },
+    { id: 'us-montagnarde-17', fichier: 'images/us-montagnarde-17.jpg', titre: '', lieu: '', date: 'Novembre 2026', categorie: 'sport', projet: 'us-montagnarde-2026', alt: 'Duel au corps à corps pour le ballon', ratio: '1151/2048' },
+    { id: 'us-montagnarde-24', fichier: 'images/us-montagnarde-24.jpg', titre: '', lieu: '', date: 'Novembre 2026', categorie: 'sport', projet: 'us-montagnarde-2026', alt: 'Joueur numéro 10 de l\'US Montagnarde conduisant le ballon', ratio: '1152/2048' },
+    { id: 'us-montagnarde-16', fichier: 'images/us-montagnarde-16.jpg', titre: '', lieu: '', date: 'Novembre 2026', categorie: 'sport', projet: 'us-montagnarde-2026', alt: 'Joueurs de l\'US Montagnarde en mur avant un coup franc', ratio: '2048/1152' },
+    { id: 'us-montagnarde-18', fichier: 'images/us-montagnarde-18.jpg', titre: '', lieu: '', date: 'Novembre 2026', categorie: 'sport', projet: 'us-montagnarde-2026', alt: 'Course vers le ballon sur toute la largeur du terrain', ratio: '2048/1151' },
+    { id: 'us-montagnarde-07', fichier: 'images/us-montagnarde-07.jpg', titre: '', lieu: '', date: 'Novembre 2026', categorie: 'sport', projet: 'us-montagnarde-2026', alt: 'Duel pour le ballon près du poteau de corner', format: 'plein', ratio: '2048/1024' },
+    { id: 'us-montagnarde-09', fichier: 'images/us-montagnarde-09.jpg', titre: '', lieu: '', date: 'Novembre 2026', categorie: 'sport', projet: 'us-montagnarde-2026', alt: 'Duel aérien entre joueurs et gardien dans la surface', ratio: '2048/2048' },
+    { id: 'us-montagnarde-11', fichier: 'images/us-montagnarde-11.jpg', titre: '', lieu: '', date: 'Novembre 2026', categorie: 'sport', projet: 'us-montagnarde-2026', alt: 'Tacle et lutte pour le ballon en pleine action', ratio: '2048/2048' },
+    { id: 'us-montagnarde-20', fichier: 'images/us-montagnarde-20.jpg', titre: '', lieu: '', date: 'Novembre 2026', categorie: 'sport', projet: 'us-montagnarde-2026', alt: 'Joueur numéro 12 de l\'US Montagnarde devant le but adverse', ratio: '2048/1024' },
+    { id: 'us-montagnarde-25', fichier: 'images/us-montagnarde-25.jpg', titre: '', lieu: '', date: 'Novembre 2026', categorie: 'sport', projet: 'us-montagnarde-2026', alt: 'Joueurs des deux équipes pendant un arrêt de jeu', ratio: '2048/1151' },
+    { id: 'us-montagnarde-10', fichier: 'images/us-montagnarde-10.jpg', titre: '', lieu: '', date: 'Novembre 2026', categorie: 'sport', projet: 'us-montagnarde-2026', alt: 'Joueurs des deux équipes en place avant un coup franc', format: 'plein', ratio: '2048/1152' },
+    { id: 'us-montagnarde-22', fichier: 'images/us-montagnarde-22.jpg', titre: '', lieu: '', date: 'Novembre 2026', categorie: 'sport', projet: 'us-montagnarde-2026', alt: 'Le gardien en saut, vu depuis le bord du terrain', ratio: '1152/2048' },
+    { id: 'us-montagnarde-26', fichier: 'images/us-montagnarde-26.jpg', titre: '', lieu: '', date: 'Novembre 2026', categorie: 'sport', projet: 'us-montagnarde-2026', alt: 'Joueur de l\'US Montagnarde revenant en position', ratio: '1151/2048' },
+    { id: 'us-montagnarde-23', fichier: 'images/us-montagnarde-23.jpg', titre: '', lieu: '', date: 'Novembre 2026', categorie: 'sport', projet: 'us-montagnarde-2026', alt: 'Phase de jeu en fin d\'après-midi', format: 'plein', ratio: '2048/1151' },
+    { id: 'us-montagnarde-08', fichier: 'images/us-montagnarde-08.jpg', titre: '', lieu: '', date: 'Novembre 2026', categorie: 'sport', projet: 'us-montagnarde-2026', alt: 'Joueur de dos en noir et blanc, numéro 12', ratio: '2048/1152' },
+    { id: 'us-montagnarde-14', fichier: 'images/us-montagnarde-14.jpg', titre: '', lieu: '', date: 'Novembre 2026', categorie: 'sport', projet: 'us-montagnarde-2026', alt: 'Joueur numéro 9 de dos en noir et blanc', ratio: '2048/1152' },
+    { id: 'us-montagnarde-21', fichier: 'images/us-montagnarde-21.jpg', titre: '', lieu: '', date: 'Novembre 2026', categorie: 'sport', projet: 'us-montagnarde-2026', alt: 'Jambes de deux joueurs au contact, en noir et blanc', format: 'plein', ratio: '2048/1152' },
+    { id: 'us-montagnarde-04', fichier: 'images/us-montagnarde-04.jpg', titre: '', lieu: '', date: 'Novembre 2026', categorie: 'sport', projet: 'us-montagnarde-2026', alt: 'Joueurs enlacés en noir et blanc avant la rencontre', ratio: '2048/2048' },
+    { id: 'us-montagnarde-13', fichier: 'images/us-montagnarde-13.jpg', titre: '', lieu: '', date: 'Novembre 2026', categorie: 'sport', projet: 'us-montagnarde-2026', alt: 'Joueur numéro 12 assis sur la pelouse, en noir et blanc', ratio: '1807/1807' },
+    { id: 'us-montagnarde-12', fichier: 'images/us-montagnarde-12.jpg', titre: '', lieu: '', date: 'Novembre 2026', categorie: 'sport', projet: 'us-montagnarde-2026', alt: 'Joueur numéro 11 de l\'US Montagnarde de dos, lumière de fin d\'après-midi', ratio: '1152/2048' },
+    { id: 'us-montagnarde-15', fichier: 'images/us-montagnarde-15.jpg', titre: '', lieu: '', date: 'Novembre 2026', categorie: 'sport', projet: 'us-montagnarde-2026', alt: 'Joueur de l\'US Montagnarde le long de la clôture en fin de match', ratio: '1151/2048' },
 
     /* Reportage FESTIVAL DE CORNOUAILLE — une seule galerie, dans l’ordre ci-dessous.
        Ajouter une photo : copier une ligne, nouvel id, nouveau « fichier ». */
@@ -237,14 +275,17 @@ window.RD = {
     { id: 'bretagne-08', fichier: '', titre: '', lieu: '', date: '', categorie: 'bretagne', ratio: '3/2' },
     { id: 'bretagne-09', fichier: '', titre: '', lieu: '', date: '', categorie: 'bretagne', ratio: '3/2' },
     { id: 'bretagne-10', fichier: '', titre: '', lieu: '', date: '', categorie: 'bretagne', format: 'plein', ratio: '21/9' },
-    { id: 'animalier-01', fichier: 'images/animalier-01.jpg', titre: '', lieu: '', date: '', categorie: 'animalier', serie: 'Animaux domestiques', alt: 'Portrait en gros plan d\'un chat Maine Coon crème et roux aux yeux ambrés, oreilles à pinceaux, fond sombre', ratio: '1200/1800' },
-    { id: 'animalier-02', fichier: 'images/animalier-02.jpg', titre: '', lieu: '', date: '', categorie: 'animalier', serie: 'Animaux domestiques', alt: 'Photo en noir et blanc d\'un chat allongé sur le dos sur un plaid à motifs, une patte levée', ratio: '1800/1200' },
-    { id: 'animalier-03', fichier: 'images/animalier-03.jpg', titre: '', lieu: '', date: '', categorie: 'animalier', serie: 'Animaux domestiques', alt: 'Portrait en gros plan d\'un chaton tigré gris aux yeux clairs, sur un plaid à motifs', ratio: '1200/1800' },
-    { id: 'animalier-04', fichier: 'images/animalier-04.jpg', titre: '', lieu: '', date: '', categorie: 'animalier', serie: 'Animaux domestiques', alt: 'Photo en noir et blanc d\'un chaton et d\'un chat adulte à poil long assis côte à côte sur un lit', ratio: '1800/1405' },
-    { id: 'animalier-05', fichier: '', titre: '', lieu: '', date: '', categorie: 'animalier', ratio: '4/5' },
-    { id: 'animalier-06', fichier: 'images/animalier-06.jpg', titre: '', lieu: '', date: '', categorie: 'animalier', serie: 'Animaux domestiques', alt: 'Portrait d\'un rottweiler la tête levée devant un mur de pierre', ratio: '1200/1800' },
-    { id: 'animalier-07', fichier: '', titre: '', lieu: '', date: '', categorie: 'animalier', ratio: '2/3' },
-    { id: 'animalier-08', fichier: '', titre: '', lieu: '', date: '', categorie: 'animalier', ratio: '3/2' },
+    { id: 'animalier-01', fichier: 'images/animalier-01.jpg', titre: '', lieu: '', date: '', categorie: 'animalier-masque', serie: 'Animaux domestiques', alt: 'Portrait en gros plan d\'un chat Maine Coon crème et roux aux yeux ambrés, oreilles à pinceaux, fond sombre', ratio: '1200/1800' },
+    { id: 'animalier-02', fichier: '', titre: '', lieu: '', date: '', categorie: 'animalier-masque', serie: 'Animaux domestiques', alt: 'Photo en noir et blanc d\'un chat allongé sur le dos sur un plaid à motifs, une patte levée', ratio: '1800/1200' },
+    { id: 'animalier-03', fichier: '', titre: '', lieu: '', date: '', categorie: 'animalier-masque', serie: 'Animaux domestiques', alt: 'Portrait en gros plan d\'un chaton tigré gris aux yeux clairs, sur un plaid à motifs', ratio: '1200/1800' },
+    { id: 'animalier-04', fichier: '', titre: '', lieu: '', date: '', categorie: 'animalier-masque', serie: 'Animaux domestiques', alt: 'Photo en noir et blanc d\'un chaton et d\'un chat adulte à poil long assis côte à côte sur un lit', ratio: '1800/1405' },
+    { id: 'animalier-05', fichier: '', titre: '', lieu: '', date: '', categorie: 'animalier-masque', ratio: '4/5' },
+    { id: 'animalier-06', fichier: '', titre: '', lieu: '', date: '', categorie: 'animalier-masque', serie: 'Animaux domestiques', alt: 'Portrait d\'un rottweiler la tête levée devant un mur de pierre', ratio: '1200/1800' },
+    { id: 'animalier-07', fichier: '', titre: '', lieu: '', date: '', categorie: 'animalier-masque', ratio: '2/3' },
+    { id: 'animalier-08', fichier: '', titre: '', lieu: '', date: '', categorie: 'animalier-masque', ratio: '3/2' },
+    { id: 'animalier-09', fichier: 'images/animalier-09.jpg', titre: '', lieu: '', date: '', categorie: 'animalier-masque', serie: 'Animaux domestiques', alt: 'Portrait en noir et blanc d\'un bouledogue allongé dans l\'herbe, yeux fermés et langue sortie, sous-bois en arrière-plan', ratio: '1151/2048' },
+    /* Photo utilisée uniquement sur la page Prestations (catégorie « prestations » : n’apparaît dans aucune galerie). */
+    { id: 'paysage-01', fichier: 'images/paysage-01.jpg', titre: '', lieu: '', date: '', categorie: 'prestations', alt: 'Sous-bois d\'automne : fougères rousses, hêtre doré et grands résineux traversés par la lumière', ratio: '2048/1151' },
 
     { id: 'guingamp-match-01', fichier: 'images/guingamp-match-01.jpg', titre: '', lieu: '', date: 'Octobre 2024', categorie: 'sport', projet: 'guingamp-feminines-2024', serie: 'Football — Match Guingamp Féminines', alt: 'Joueuse de l\'En Avant Guingamp portant le numéro 9, maillot rouge, vue de dos, adversaire en bleu flou à l\'arrière-plan, sous la pluie', ratio: '1200/1800' },
     { id: 'guingamp-match-02', fichier: 'images/guingamp-match-02.jpg', titre: '', lieu: '', date: 'Octobre 2024', categorie: 'sport', projet: 'guingamp-feminines-2024', serie: 'Football — Match Guingamp Féminines', alt: 'Joueuse portant le numéro 11, maillot rouge, vue de dos, remplaçantes assises sur le banc en arrière-plan', ratio: '1800/900' },
