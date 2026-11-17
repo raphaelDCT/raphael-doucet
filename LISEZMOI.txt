@@ -51,6 +51,8 @@ js/traduction.js           Version anglaise (dictionnaire français → anglais)
 images/                    Les 141 photographies publiées + la vignette de la vidéo
 images/m/                  Versions légères (1280 px) des mêmes photos, pour téléphone
 sitemap.xml                Plan du site pour Google (Search Console)
+robots.txt                 Indique à Google où trouver le plan du site
+CNAME                      Nom de domaine du site (raphaeldoucet.fr) pour GitHub
 icones/                    Icône d’onglet, icône d’écran d’accueil, image de partage
 js/images-legeres.js       Choisit la version légère ou d’origine selon l’écran
 .nojekyll                  Indique à GitHub de publier les fichiers tels quels
@@ -74,9 +76,10 @@ PUBLIER_SUR_GITHUB_PAGES.txt  Mise en ligne pas à pas
   versions légères (images/m/) s’y ajoutent sans les remplacer : le navigateur
   ne les prend que si l’écran n’a pas besoin de plus, et la visionneuse plein
   écran affiche toujours la photo d’origine.
-- Aperçu de partage : l’adresse du site y est écrite en entier
-  (raphaeldct.github.io/raphael-doucet). Le jour où tu prends un nom de
-  domaine, il faudra la changer (je m’en occupe).
+- Adresse du site : https://raphaeldoucet.fr (nom de domaine OVHcloud acheté
+  le 17 novembre 2026 pour 3 ans, renouvellement automatique). L’ancienne
+  adresse raphaeldct.github.io/raphael-doucet renvoie automatiquement vers
+  la nouvelle. Le fichier CNAME indique ce nom à GitHub : ne pas le supprimer.
 - Aucune dépendance à Netlify ni à un chemin de ton ordinateur.
 - Le canvas Claude Design reste la source : pour modifier le site, on modifie
   le canvas puis on régénère ce dossier.

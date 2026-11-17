@@ -2,7 +2,7 @@ INVENTAIRE DU SITE — RAPHAËL DOUCET, PHOTOGRAPHE ET VIDÉASTE
 Version du 17 novembre 2026 (canvas version 77)
 
 RÉSUMÉ
-  Fichiers au total ........ 325  (dont ce fichier INVENTAIRE.txt)
+  Fichiers au total ........ 327  (dont ce fichier INVENTAIRE.txt)
   Poids total .............. 94.9 Mo  (photos d’origine : 62.3 Mo ; versions légères : 31.8 Mo)
   Pages HTML ............... 19
   Composants partagés ...... 3  (SiteNav, SiteFooter, Gallery — fichiers .dc.html)
@@ -57,11 +57,12 @@ PAGES
 
 LISTE DÉTAILLÉE DES FICHIERS (taille en octets, empreinte SHA-256 abrégée)
   .nojekyll                                                    0  e3b0c44298fc1c14
-  a-propos.html                                             5322  47d046931541fb48
-  contact.html                                             17263  f14294308949c5b5
+  a-propos.html                                             5265  5808c3a6b3701fbe
+  CNAME                                                       17  ac59819d9d8463a0
+  contact.html                                             17206  740d2c97af0920e5
   css/style.css                                            28800  4458a3e19ea9b031
   css/transitions.css                                       1819  719600b08d989b57
-  evenementiel.html                                         6521  68da122c71795deb
+  evenementiel.html                                         6464  598ae3b89cbd41b4
   Gallery.dc.html                                          14275  c8ddc460dab159a7
   icones/apple-touch-icon.png                               7548  07992ffebfcf9c2e
   icones/favicon-32.png                                     1376  f30c7ef4d5045626
@@ -69,32 +70,33 @@ LISTE DÉTAILLÉE DES FICHIERS (taille en octets, empreinte SHA-256 abrégée)
   icones/icon-192.png                                      10495  38c677e7099e9ec9
   icones/icon-512.png                                      28213  2f3942faf6ba1aaf
   icones/partage.jpg                                      120432  95e5a640963f9479
-  index.html                                               20607  427a3ab08e591426
+  index.html                                               20550  491b811db62f3f8e
   js/donnees-site.js                                       43863  3e32e4fa17b21657
   js/images-legeres.js                                      6267  5f2d87e8998e967f
   js/traduction.js                                         49297  fac0cdb074cfe70d
-  LISEZMOI.txt                                              4723  a0e0d5fee8047e8d
-  mentions-legales.html                                     9969  0cc43c9656892c73
-  portfolio.html                                            5191  a9e8ceae08837561
-  portrait.html                                             6402  76803f8e438599e1
-  prestations.html                                         16705  4491e50395218dfc
-  PROBLEMES_A_RESOUDRE.txt                                  5732  036b800e3bf5c99a
-  projets.html                                              7864  80d5928f05485ba8
+  LISEZMOI.txt                                              4994  2b8727a5351d3f9d
+  mentions-legales.html                                     9912  064db2b50674cba4
+  portfolio.html                                            5134  cc4dc3da2dc16e3a
+  portrait.html                                             6345  ad4f15f441108a5c
+  prestations.html                                         16648  2b3239415a4a7b0e
+  PROBLEMES_A_RESOUDRE.txt                                  5799  28710e63438cf309
+  projets.html                                              7807  f094aba31b5ff944
   PUBLIER_SUR_GITHUB_PAGES.txt                              3470  595e67d273e0f98f
-  reportage-cross-country-2024.html                         4920  fdecd836d6c35fc2
-  reportage-en-attendant.html                               4858  952e098125025bbc
-  reportage-festival-cornouaille.html                       4926  7a1791c48884dae4
-  reportage-fete-sainte-julienne.html                       4934  54f009bf0787eb3b
-  reportage-guingamp-feminines-2024.html                    4943  1c8e8b3458c873c0
-  reportage-merleac-2026.html                               4906  0579b7219c2bfb6c
-  reportage-tondeuse-glomel-2024.html                       4968  ceb8aed0b4e930d8
-  reportage-us-montagnarde-2026.html                        4933  42fba88f90d2a340
+  reportage-cross-country-2024.html                         4863  fb07d6f3c488dc7a
+  reportage-en-attendant.html                               4801  b449333eaeceee57
+  reportage-festival-cornouaille.html                       4869  19ce9457a508f9b9
+  reportage-fete-sainte-julienne.html                       4877  31570802c9a50a9e
+  reportage-guingamp-feminines-2024.html                    4886  0a5e3076a73b8fe9
+  reportage-merleac-2026.html                               4849  1a7c092c925fd519
+  reportage-tondeuse-glomel-2024.html                       4911  3bcea4a34b173751
+  reportage-us-montagnarde-2026.html                        4876  f12033bc49f4f482
+  robots.txt                                                  70  4dbb3e0899c0e453
   SiteFooter.dc.html                                        1999  03d4425fbe207f09
-  sitemap.xml                                               2374  bc841059edf64118
+  sitemap.xml                                               2013  231a6d51a71c97e9
   SiteNav.dc.html                                           5664  4ce9ea11e7a8db85
-  sport.html                                                6519  7ec268b06e8b6b09
+  sport.html                                                6462  91a663c52edf7f5a
   support.js                                              188749  b795ee21261f2e7d
-  video.html                                               19417  1c0ffbcbb95db6a3
+  video.html                                               19360  5670e065c8bdf95e
   images/accueil-01.jpg                                   313546  aa625386bca18a93
   images/animalier-01.jpg                                 148107  2d8ac7cde35e69f1
   images/animalier-09.jpg                                 362712  d6edc106d94fbfc1

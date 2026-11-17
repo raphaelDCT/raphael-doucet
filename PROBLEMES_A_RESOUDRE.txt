@@ -79,10 +79,11 @@ LIMITES CONNUES (SIGNALÉES, NON MASQUÉES)
     « Bretagne.dc.html » : sans effet tant que la catégorie est vide.
 
 11. RÉFÉRENCEMENT GOOGLE : balise de validation Google Search Console ajoutée
-    à l’accueil et plan du site sitemap.xml créé (17 novembre 2026). Le fichier
-    robots.txt n’est lu par Google qu’à la racine d’un domaine : il sera créé
-    avec le nom de domaine. Le jour du nom de domaine, il faudra aussi refaire
-    la validation Search Console pour la nouvelle adresse.
+    à l’accueil, plan du site sitemap.xml et robots.txt (17 novembre 2026).
+    Nom de domaine raphaeldoucet.fr branché le 17 novembre 2026 (zone DNS OVH :
+    4 adresses A + 4 AAAA GitHub, www → raphaeldct.github.io ; lignes email
+    MX/SPF conservées). À faire : ajouter raphaeldoucet.fr comme nouvelle
+    propriété dans Search Console et y renvoyer sitemap.xml.
 
 12. ANCIEN SITE NETLIFY : toujours en ligne (non modifié). À rediriger ou
     supprimer une fois le nouveau site publié, pour éviter deux versions
