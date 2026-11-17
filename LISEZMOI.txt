@@ -3,7 +3,7 @@ Site complet prêt pour GitHub Pages — version finale du 3 novembre 2026
 =====================================================================
 
 Ce dossier est le site complet et autonome. Il correspond à la dernière
-version du canvas « Portfolio — Raphaël Doucet » (version 73), qui comprend :
+version du canvas « Portfolio — Raphaël Doucet » (version 77), qui comprend :
 - la fusion des deux versions (ancien site + canvas) ;
 - le formulaire de contact et de devis relié à Web3Forms (clé ajoutée,
   envoi réel testé et reçu le 3 novembre 2026) ;
@@ -13,7 +13,12 @@ version du canvas « Portfolio — Raphaël Doucet » (version 73), qui comprend
 - la catégorie Animalier masquée (6 novembre 2026) : plus de page ni de lien,
   ses photos ne sont plus dans le dossier images (sauf celle de la prestation) ;
 - un nouveau reportage Sport : US Montagnarde, match de football (novembre 2026,
-  26 photos).
+  26 photos) ;
+- la page Mentions légales et confidentialité (17 novembre 2026), reliée
+  depuis le pied de page de toutes les pages et depuis le formulaire de contact ;
+- une icône d’onglet « RD », un aperçu de partage (photo + titre quand on
+  partage un lien sur WhatsApp, Instagram, Facebook…) et des versions légères
+  des photos pour téléphone (17 novembre 2026).
 
 Tout son contenu s’envoie tel quel à la racine du dépôt GitHub
 (voir PUBLIER_SUR_GITHUB_PAGES.txt).
@@ -31,6 +36,7 @@ contact.html               Contact et demande de devis (Web3Forms)
 sport.html, evenementiel.html, portrait.html
                            Pages des catégories du portfolio
 reportage-*.html           Les 8 reportages
+mentions-legales.html      Mentions légales et politique de confidentialité
 
 SiteNav.dc.html            Menu (commun à toutes les pages)
 SiteFooter.dc.html         Pied de page (commun à toutes les pages)
@@ -43,6 +49,9 @@ js/donnees-site.js         Données du site : photos, catégories, reportages,
                            coordonnées. C’est ici qu’on ajoute une photo.
 js/traduction.js           Version anglaise (dictionnaire français → anglais)
 images/                    Les 141 photographies publiées + la vignette de la vidéo
+images/m/                  Versions légères (1280 px) des mêmes photos, pour téléphone
+icones/                    Icône d’onglet, icône d’écran d’accueil, image de partage
+js/images-legeres.js       Choisit la version légère ou d’origine selon l’écran
 .nojekyll                  Indique à GitHub de publier les fichiers tels quels
                            (fichier invisible sur Mac : Cmd + Maj + point)
 
@@ -60,7 +69,13 @@ PUBLIER_SUR_GITHUB_PAGES.txt  Mise en ligne pas à pas
 - Le site doit être ouvert depuis un hébergeur (GitHub Pages…). En
   double-cliquant sur index.html depuis l’ordinateur, les pages ne s’affichent
   pas : c’est normal, le navigateur bloque le chargement des composants en local.
-- Les photos sont les fichiers web d’origine, sans nouvelle compression.
+- Les photos sont les fichiers web d’origine, sans nouvelle compression. Les
+  versions légères (images/m/) s’y ajoutent sans les remplacer : le navigateur
+  ne les prend que si l’écran n’a pas besoin de plus, et la visionneuse plein
+  écran affiche toujours la photo d’origine.
+- Aperçu de partage : l’adresse du site y est écrite en entier
+  (raphaeldct.github.io/raphael-doucet). Le jour où tu prends un nom de
+  domaine, il faudra la changer (je m’en occupe).
 - Aucune dépendance à Netlify ni à un chemin de ton ordinateur.
 - Le canvas Claude Design reste la source : pour modifier le site, on modifie
   le canvas puis on régénère ce dossier.

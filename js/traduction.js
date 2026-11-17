@@ -153,6 +153,12 @@
     "Joueur de l'US Montagnarde revenant en position": "US Montagnarde player walking back into position",
     "Portrait en noir et blanc d'un bouledogue allongé dans l'herbe, yeux fermés et langue sortie, sous-bois en arrière-plan": "Black and white portrait of a bulldog lying in the grass, eyes closed and tongue out, woodland behind",
     "Sous-bois d'automne : fougères rousses, hêtre doré et grands résineux traversés par la lumière": "Autumn woodland: russet ferns, a golden beech and tall conifers with light streaming through",
+    'Mentions légales': 'Legal notice',
+    'Éditeur du site': 'Site publisher',
+    'Hébergeur': 'Hosting provider',
+    'Propriété intellectuelle': 'Intellectual property',
+    'Politique de confidentialité': 'Privacy policy',
+    'Cette page est rédigée en français, conformément au droit français.': 'This legal notice is provided in French, in accordance with French law.',
     'MERLÉAC 2026': 'MERLÉAC 2026',
     'Championnat de France de Moto de Côte': 'French Motorcycle Hill Climb Championship',
     'Reportage photographique réalisé lors du Championnat de France de Moto de Côte à Merléac en septembre 2026.':

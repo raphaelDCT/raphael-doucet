@@ -1,13 +1,13 @@
-POINTS RESTANT À RÉGLER — mise à jour du 16 novembre 2026
+POINTS RESTANT À RÉGLER — mise à jour du 17 novembre 2026
 ===========================================================
 
 VÉRIFICATIONS FAITES AVANT LIVRAISON
 (site servi depuis un sous-dossier, exactement comme sur GitHub Pages)
-- 18 pages ouvertes : 0 lien interne cassé, 0 image cassée, 0 erreur JavaScript.
+- 19 pages ouvertes : 0 lien interne cassé, 0 image cassée, 0 erreur JavaScript.
 - Affichage : 0 débordement sur téléphone (390 px), tablette (768 et 1024 px)
   et ordinateur (1440 px).
 - Visionneuse testée sur les galeries (ouverture, image suivante, Échap).
-- Version anglaise : les 18 pages passent en anglais, aucun texte français
+- Version anglaise : les 19 pages passent en anglais, aucun texte français
   repéré ; bouton FR / EN fonctionnel.
 - Formulaire contact / devis : clé Web3Forms présente, présélection depuis
   Prestations, confirmation après envoi, message d’erreur en cas d’échec
@@ -20,14 +20,18 @@ RÉGLÉ
 -----
 1. FORMULAIRE DE CONTACT : clé Web3Forms ajoutée, envoi réel reçu.
    Les demandes arrivent sur l’adresse email du compte Web3Forms.
+2. MENTIONS LÉGALES ET CONFIDENTIALITÉ : page mentions-legales.html ajoutée le
+   17 novembre 2026 (SIREN 104 945 936, SIRET 104 945 936 00011, adresse,
+   hébergeur GitHub, droits RGPD, absence de cookies). Lien dans le pied de page
+   et sous le formulaire. Le texte reste en français dans la version anglaise
+   (titres traduits). Adresse : seule la ville
+   (56110 Gourin) est affichée, à ta demande — voir la limite ci-dessous.
+   À vérifier par toi : durée de
+   conservation de 3 ans, TVA non mentionnée (régime à préciser si besoin).
 
 
 À FAIRE
 -------
-2. MENTIONS LÉGALES ET CONFIDENTIALITÉ : absentes (obligatoires pour une
-   micro-entreprise qui collecte des données par formulaire).
-   → Il me faut ton numéro SIRET pour rédiger la page.
-
 3. TEXTES À VALIDER : descriptions des 9 prestations, « Comment ça se passe »
    et accroches de la page Prestations, rédigés à partir de ton ancien site.
 
@@ -43,6 +47,12 @@ RÉGLÉ
 
 LIMITES CONNUES (SIGNALÉES, NON MASQUÉES)
 -----------------------------------------
+5b. ADRESSE NON AFFICHÉE : la loi (LCEN, art. 6) demande qu’un entrepreneur
+    individuel indique son adresse dans les mentions légales. Seule la ville
+    est affichée, à ta demande. Solution conforme sans montrer ton domicile :
+    une adresse de domiciliation (société de domiciliation ou boîte postale
+    commerciale), que j’ajouterai dès que tu l’auras.
+
 6. PHOTOS « ARCHIVES » : les 6 photos couple / grossesse de l’ancien site
    sont dans le dossier images et dans les données, mais n’apparaissent plus
    sur la page Portrait (à ta demande). L’une d’elles (portrait-02) illustre
@@ -79,8 +89,15 @@ LIMITES CONNUES (SIGNALÉES, NON MASQUÉES)
     console du navigateur signale une requête inutile vers « {{ hero.fichier }} »
     (le moteur lit le modèle avant de l’afficher). L’image s’affiche normalement.
 
-14. POIDS DES PHOTOS : 46 Mo au total, photos web d’origine non recompressées.
-    Une version WebP multi-tailles accélérerait le chargement sur téléphone.
+14. POIDS DES PHOTOS : réglé le 17 novembre 2026. Chaque photo a une version
+    légère de 1280 px (images/m/, 32 Mo au total contre 62 Mo pour les
+    originales). Sur téléphone, le site charge environ deux fois moins de
+    données. Les photos d’origine ne sont pas modifiées et restent utilisées
+    sur grand écran et dans la visionneuse.
+
+14b. ICÔNE ET APERÇU DE PARTAGE : ajoutés le 17 novembre 2026, uniquement dans
+    le dossier GitHub (pas dans le canvas, où ils ne servent à rien). Facebook
+    et WhatsApp gardent parfois l’ancien aperçu quelques jours en mémoire.
 
 15. COPIE DE SÉCURITÉ GITHUB : non faite par moi (aucun compte GitHub relié).
     Une fois le dépôt créé, il sert lui-même de copie de sécurité.
