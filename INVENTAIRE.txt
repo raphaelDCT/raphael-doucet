@@ -70,10 +70,10 @@ LISTE DÉTAILLÉE DES FICHIERS (taille en octets, empreinte SHA-256 abrégée)
   icones/icon-192.png                                      10495  38c677e7099e9ec9
   icones/icon-512.png                                      28213  2f3942faf6ba1aaf
   icones/partage.jpg                                      120432  95e5a640963f9479
-  index.html                                               20550  491b811db62f3f8e
+  index.html                                               20645  7b656fd1b9e9f0b6
   js/donnees-site.js                                       43863  3e32e4fa17b21657
   js/images-legeres.js                                      6267  5f2d87e8998e967f
-  js/traduction.js                                         49297  fac0cdb074cfe70d
+  js/traduction.js                                         49538  6ffcc2e036d02206
   LISEZMOI.txt                                              4994  2b8727a5351d3f9d
   mentions-legales.html                                     9912  064db2b50674cba4
   portfolio.html                                            5134  cc4dc3da2dc16e3a

@@ -486,6 +486,8 @@
   /* ---------- Langue courante ---------- */
   function detect() {
     try { var s = localStorage.getItem(KEY); if (s === 'fr' || s === 'en') return s; } catch (e) {}
+    /* Robots des moteurs de recherche (Google…) : toujours la version française */
+    if (/bot|crawl|spider|slurp|google|bing|yandex|baidu|duckduck|facebookexternalhit|whatsapp|lighthouse/i.test(navigator.userAgent || '')) return 'fr';
     var l = (navigator.languages && navigator.languages[0]) || navigator.language || 'fr';
     return /^fr/i.test(l) ? 'fr' : 'en';
   }
