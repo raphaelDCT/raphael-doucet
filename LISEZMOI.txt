@@ -50,6 +50,7 @@ js/donnees-site.js         Données du site : photos, catégories, reportages,
 js/traduction.js           Version anglaise (dictionnaire français → anglais)
 images/                    Les 141 photographies publiées + la vignette de la vidéo
 images/m/                  Versions légères (1280 px) des mêmes photos, pour téléphone
+sitemap.xml                Plan du site pour Google (Search Console)
 icones/                    Icône d’onglet, icône d’écran d’accueil, image de partage
 js/images-legeres.js       Choisit la version légère ou d’origine selon l’écran
 .nojekyll                  Indique à GitHub de publier les fichiers tels quels

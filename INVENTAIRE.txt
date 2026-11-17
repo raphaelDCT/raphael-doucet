@@ -2,7 +2,7 @@ INVENTAIRE DU SITE — RAPHAËL DOUCET, PHOTOGRAPHE ET VIDÉASTE
 Version du 17 novembre 2026 (canvas version 77)
 
 RÉSUMÉ
-  Fichiers au total ........ 324  (dont ce fichier INVENTAIRE.txt)
+  Fichiers au total ........ 325  (dont ce fichier INVENTAIRE.txt)
   Poids total .............. 94.9 Mo  (photos d’origine : 62.3 Mo ; versions légères : 31.8 Mo)
   Pages HTML ............... 19
   Composants partagés ...... 3  (SiteNav, SiteFooter, Gallery — fichiers .dc.html)
@@ -69,16 +69,16 @@ LISTE DÉTAILLÉE DES FICHIERS (taille en octets, empreinte SHA-256 abrégée)
   icones/icon-192.png                                      10495  38c677e7099e9ec9
   icones/icon-512.png                                      28213  2f3942faf6ba1aaf
   icones/partage.jpg                                      120432  95e5a640963f9479
-  index.html                                               20512  fa054c91b4872cca
+  index.html                                               20607  427a3ab08e591426
   js/donnees-site.js                                       43863  3e32e4fa17b21657
   js/images-legeres.js                                      6267  5f2d87e8998e967f
   js/traduction.js                                         49297  fac0cdb074cfe70d
-  LISEZMOI.txt                                              4654  0c1ccf8148500f11
+  LISEZMOI.txt                                              4723  a0e0d5fee8047e8d
   mentions-legales.html                                     9969  0cc43c9656892c73
   portfolio.html                                            5191  a9e8ceae08837561
   portrait.html                                             6402  76803f8e438599e1
   prestations.html                                         16705  4491e50395218dfc
-  PROBLEMES_A_RESOUDRE.txt                                  5475  8fb22420b4652566
+  PROBLEMES_A_RESOUDRE.txt                                  5732  036b800e3bf5c99a
   projets.html                                              7864  80d5928f05485ba8
   PUBLIER_SUR_GITHUB_PAGES.txt                              3470  595e67d273e0f98f
   reportage-cross-country-2024.html                         4920  fdecd836d6c35fc2
@@ -90,6 +90,7 @@ LISTE DÉTAILLÉE DES FICHIERS (taille en octets, empreinte SHA-256 abrégée)
   reportage-tondeuse-glomel-2024.html                       4968  ceb8aed0b4e930d8
   reportage-us-montagnarde-2026.html                        4933  42fba88f90d2a340
   SiteFooter.dc.html                                        1999  03d4425fbe207f09
+  sitemap.xml                                               2374  bc841059edf64118
   SiteNav.dc.html                                           5664  4ce9ea11e7a8db85
   sport.html                                                6519  7ec268b06e8b6b09
   support.js                                              188749  b795ee21261f2e7d
