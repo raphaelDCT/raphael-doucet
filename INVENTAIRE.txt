@@ -2,16 +2,16 @@ INVENTAIRE DU SITE — RAPHAËL DOUCET, PHOTOGRAPHE ET VIDÉASTE
 Version du 17 novembre 2026 (canvas version 77)
 
 RÉSUMÉ
-  Fichiers au total ........ 327  (dont ce fichier INVENTAIRE.txt)
-  Poids total .............. 94.9 Mo  (photos d’origine : 62.3 Mo ; versions légères : 31.8 Mo)
+  Fichiers au total ........ 329  (dont ce fichier INVENTAIRE.txt)
+  Poids total .............. 96.1 Mo  (photos d’origine : 63.2 Mo ; versions légères : 32.2 Mo)
   Pages HTML ............... 19
   Composants partagés ...... 3  (SiteNav, SiteFooter, Gallery — fichiers .dc.html)
   Feuilles de style ........ 2  (css/style.css, css/transitions.css)
   Scripts .................. 4  (support.js, js/donnees-site.js, js/traduction.js, js/images-legeres.js)
-  Photographies ............ 143  (dossier images/)
+  Photographies ............ 144  (dossier images/)
   Vignette vidéo ........... 1  (images/video-penmarch-miniature.jpg)
-  Fichiers dans images/ .... 144
-  Versions légères ......... 141  (dossier images/m/, 1280 px, pour téléphone)
+  Fichiers dans images/ .... 145
+  Versions légères ......... 142  (dossier images/m/, 1280 px, pour téléphone)
   Icônes et partage ........ 6  (dossier icones/)
   Vidéo .................... 1  hébergée sur YouTube (PENMARC’H — Entre terre et mer)
   Reportages ............... 8
@@ -29,10 +29,10 @@ PHOTOGRAPHIES PAR REPORTAGE ET GALERIE
   Reportage EN ATTENDANT (portrait) : 15
   Archives (non affichées en Portrait) — Couple / Grossesse : 6
   Galerie Animalier-masque — Animaux domestiques : 2
-  Galerie Prestations : 1
+  Galerie Prestations : 2
   Reportage GUINGAMP FÉMININES 2024 (sport) : 16
   Reportage CROSS-COUNTRY 2024 (sport) : 14
-  TOTAL : 143
+  TOTAL : 144
 
 PAGES
   a-propos.html
@@ -71,14 +71,14 @@ LISTE DÉTAILLÉE DES FICHIERS (taille en octets, empreinte SHA-256 abrégée)
   icones/icon-512.png                                      28213  2f3942faf6ba1aaf
   icones/partage.jpg                                      120432  95e5a640963f9479
   index.html                                               20645  7b656fd1b9e9f0b6
-  js/donnees-site.js                                       43863  3e32e4fa17b21657
-  js/images-legeres.js                                      6267  5f2d87e8998e967f
+  js/donnees-site.js                                       44147  3de57f99637167f9
+  js/images-legeres.js                                      6294  66ca4c71f51d0b16
   js/traduction.js                                         49538  6ffcc2e036d02206
   LISEZMOI.txt                                              4994  2b8727a5351d3f9d
   mentions-legales.html                                     9912  064db2b50674cba4
   portfolio.html                                            5134  cc4dc3da2dc16e3a
   portrait.html                                             6345  ad4f15f441108a5c
-  prestations.html                                         16648  2b3239415a4a7b0e
+  prestations.html                                         16642  a73e833d52dd2a40
   PROBLEMES_A_RESOUDRE.txt                                  5799  28710e63438cf309
   projets.html                                              7807  f094aba31b5ff944
   PUBLIER_SUR_GITHUB_PAGES.txt                              3470  595e67d273e0f98f
@@ -92,7 +92,7 @@ LISTE DÉTAILLÉE DES FICHIERS (taille en octets, empreinte SHA-256 abrégée)
   reportage-us-montagnarde-2026.html                        4876  f12033bc49f4f482
   robots.txt                                                  70  4dbb3e0899c0e453
   SiteFooter.dc.html                                        1999  03d4425fbe207f09
-  sitemap.xml                                               2013  231a6d51a71c97e9
+  sitemap.xml                                               2013  c05ee5c0cf2ebce0
   SiteNav.dc.html                                           5664  4ce9ea11e7a8db85
   sport.html                                                6462  91a663c52edf7f5a
   support.js                                              188749  b795ee21261f2e7d
@@ -145,6 +145,7 @@ LISTE DÉTAILLÉE DES FICHIERS (taille en octets, empreinte SHA-256 abrégée)
   images/guingamp-match-14.jpg                            233133  8705e1e0a4779d7f
   images/guingamp-match-15.jpg                            404899  7ed964d513fa292c
   images/guingamp-match-16.jpg                            152433  087d77104c18a5a1
+  images/lieux-01.jpg                                     909019  42ed704bd69205c8
   images/m/accueil-01.jpg                                 100177  311efd7eda9c3c0a
   images/m/animalier-01.jpg                               114334  e539a81d461f7fdf
   images/m/animalier-09.jpg                               144446  407941b0d21be8c6
@@ -190,6 +191,7 @@ LISTE DÉTAILLÉE DES FICHIERS (taille en octets, empreinte SHA-256 abrégée)
   images/m/guingamp-match-14.jpg                          141623  8c85e3b44b4b84da
   images/m/guingamp-match-15.jpg                          171713  c1f7f2a61709a456
   images/m/guingamp-match-16.jpg                          106867  3e4bb7d8ea413f1f
+  images/m/lieux-01.jpg                                   329056  6848a302b1442582
   images/m/merleac-01.jpg                                 195949  446f0f0bcf892536
   images/m/merleac-02.jpg                                 204351  c8736293bf8c2f50
   images/m/merleac-03.jpg                                 261807  fd8f5d740099646b

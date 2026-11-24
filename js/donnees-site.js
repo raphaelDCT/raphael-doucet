@@ -285,6 +285,7 @@ window.RD = {
     { id: 'animalier-08', fichier: '', titre: '', lieu: '', date: '', categorie: 'animalier-masque', ratio: '3/2' },
     { id: 'animalier-09', fichier: 'images/animalier-09.jpg', titre: '', lieu: '', date: '', categorie: 'animalier-masque', serie: 'Animaux domestiques', alt: 'Portrait en noir et blanc d\'un bouledogue allongé dans l\'herbe, yeux fermés et langue sortie, sous-bois en arrière-plan', ratio: '1151/2048' },
     /* Photo utilisée uniquement sur la page Prestations (catégorie « prestations » : n’apparaît dans aucune galerie). */
+    { id: 'lieux-01', fichier: 'images/lieux-01.jpg', titre: '', lieu: '', date: 'Novembre 2026', categorie: 'prestations', alt: 'Vue aérienne au drone d\'un manoir en pierre au toit d\'ardoise, entouré d\'une forêt d\'automne, d\'une allée et de prairies', ratio: '2048/1024' },
     { id: 'paysage-01', fichier: 'images/paysage-01.jpg', titre: '', lieu: '', date: '', categorie: 'prestations', alt: 'Sous-bois d\'automne : fougères rousses, hêtre doré et grands résineux traversés par la lumière', ratio: '2048/1151' },
 
     { id: 'guingamp-match-01', fichier: 'images/guingamp-match-01.jpg', titre: '', lieu: '', date: 'Octobre 2024', categorie: 'sport', projet: 'guingamp-feminines-2024', serie: 'Football — Match Guingamp Féminines', alt: 'Joueuse de l\'En Avant Guingamp portant le numéro 9, maillot rouge, vue de dos, adversaire en bleu flou à l\'arrière-plan, sous la pluie', ratio: '1200/1800' },
