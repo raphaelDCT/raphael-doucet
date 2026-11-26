@@ -147,7 +147,7 @@ svg{display:block}
 .bz-item.full{grid-column:1/-1;margin-left:calc(var(--pad) * -1);margin-right:calc(var(--pad) * -1)}
 .bz-item.full .cap{padding:0 var(--pad)}
 .bz-item.full .tile-btn:focus-visible{outline-offset:-4px}
-@media (max-width:600px){.bz{grid-template-columns:1fr}}
+@media (max-width:600px){.bz{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.bz-item.full{margin-top:4px;margin-bottom:4px}.bz-item .cap{font-size:10px}}
 .cover{margin:0}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:clamp(28px,3vw,40px)}
 .chip{min-height:44px;padding:0 16px;border:1px solid var(--line);border-radius:999px;background:transparent;color:var(--muted);font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;transition:all .2s}
